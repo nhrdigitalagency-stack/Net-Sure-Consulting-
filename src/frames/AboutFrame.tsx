@@ -15,14 +15,14 @@ export const AboutFrame: React.FC<AboutFrameProps> = ({ onNavigateToContact }) =
   const forces: Array<{ title: string; desc: string }> = t('about.forces') || [];
 
   const partners = [
-    'AGENIUS PARTNER',
-    'ORACLE ECOSYSTEM',
-    'GOOGLE MAPS VERIFIED',
-    'IBM MAINFRAME COMPAT',
-    'POSTGRESQL DEV',
-    'STRIPE PAYMENT RAILS',
-    'SEO LOCAL ALLIANCE',
-    'RGPD CONFORMITÉ UE',
+    'AGENIUS FORMATION',
+    'GOOGLE MAPS VÉRIFIÉ',
+    'ORACLE SOLUTIONS',
+    'HÉBERGEMENT FRANCE',
+    'CONFORMITÉ RGPD CNIL',
+    'PAIEMENT SÉCURISÉ STRIPE',
+    'RÉFÉRENCEMENT LOCAL',
+    'SUPPORT CLIENT DÉDIÉ',
   ];
 
   return (

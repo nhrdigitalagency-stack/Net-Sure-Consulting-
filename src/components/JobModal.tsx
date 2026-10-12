@@ -114,14 +114,14 @@ export const JobModal: React.FC<JobModalProps> = ({ isOpen, onClose }) => {
 
             <div>
               <label className="block font-medium mb-1 text-neutral-700 dark:text-neutral-300">
-                Synthèse de votre expérience SEPA / Mainframe / AMOA *
+                Synthèse de votre parcours et de vos motivations *
               </label>
               <textarea
                 rows={4}
                 required
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Précisez vos réalisations en virements SEPA (SCT), rédaction de spécifications, COBOL/SQL ou tests de recette..."
+                placeholder="Présentez votre expérience, vos points forts et les projets qui vous animent pour rejoindre l'équipe Net Sure Consulting..."
                 className="w-full px-4 py-2.5 rounded-xl border border-neutral-300 dark:border-neutral-700/80 bg-white dark:bg-[#060709] focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none resize-none transition-all"
               />
             </div>

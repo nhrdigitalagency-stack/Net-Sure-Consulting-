@@ -86,7 +86,7 @@
     "infra": {
       "num": "04",
       "title": "Infrastructure",
-      "desc": "Mainframe and Open systems engineering, managed services, hosting, and data centers with performance commitments."
+      "desc": "Sovereign hosting in France, proactive maintenance, and dedicated support ensuring uninterrupted uptime for your digital assets."
     }
   },
   "differenciators": {
@@ -242,11 +242,11 @@
     "categories": {
       "it": {
         "title": "Information Systems & Database",
-        "items": ["RDBMS (Oracle, DB2, PostgreSQL)", "Mainframe & Legacy Architecture", "System & Network Engineering", "IT Project Governance", "Software Engineering & Agile Frameworks"]
+        "items": ["Enterprise Databases (Oracle, PostgreSQL)", "Secure Cloud Infrastructure", "Enterprise Systems & Networks", "IT Project Governance", "Web Engineering & Agile Frameworks"]
       },
       "business": {
         "title": "Business Architecture Curriculums",
-        "items": ["Business Analysis (AMOA)", "Technical Delivery Architecture (AMOE)", "Mainframe COBOL Engineering", "Oracle PL/SQL", "Modern Web Engineering (Java, C#, .NET)"]
+        "items": ["Business Analysis (AMOA)", "Technical Delivery Architecture (AMOE)", "Modern Application Architecture", "Oracle PL/SQL", "Full-Stack Web Development"]
       },
       "users": {
         "title": "End-User & Office Operations",
@@ -260,24 +260,24 @@
   },
   "infrastructure": {
     "frameTitle": "Infrastructure & Cloud",
-    "headline": "Mainframe & Open Systems. Contractual SLA guarantees.",
-    "intro": "Resilient infrastructure underpins every lasting digital transformation. We manage, fortify, and scale mission-critical corporate estates.",
+    "headline": "Reliable, high-speed, and secure infrastructure—without technical jargon.",
+    "intro": "Technology should simplify your operations, not complicate them. We manage, secure, and maintain your web tools and servers so you can focus entirely on growing your business with total peace of mind.",
     "pillars": [
       {
-        "title": "Managed Operations",
-        "desc": "Continuous operational maintenance (MCO) across core operating systems, middleware, DBMS, and network topologies. 24/7 incident mitigation and fixed-scope SLAs."
+        "title": "Continuous Care & Daily Uptime",
+        "desc": "Proactive monitoring of your websites and applications: we anticipate issues, apply essential security updates, and keep your business running smoothly 24/7."
       },
       {
-        "title": "Advisory & Architecture",
-        "desc": "IT governance, production scheduling, enterprise system blueprinting, technical business analysis, and infrastructure steering."
+        "title": "Clear Advisory & Smart Strategy",
+        "desc": "We guide you toward the most reliable, cost-effective technologies suited to your real business needs, with plain explanations and zero hidden costs."
       },
       {
-        "title": "Integration & Transformation",
-        "desc": "DevOps toolchain rollouts, ITSM automation, production line industrialization, and lead technical oversight on migration initiatives."
+        "title": "Smooth Migrations & Evolution",
+        "desc": "Scale your digital tools with ease: we migrate data, upgrade systems, and configure your environments with zero disruption for your customers."
       },
       {
-        "title": "Specialized Competencies",
-        "desc": "Hardened networks, unified OS environments, enterprise middleware, high-availability relational databases, and 24/7 site operations."
+        "title": "Hardened Security & Daily Backups",
+        "desc": "Advanced protection against cyber threats, included SSL certificates, and daily automated off-site backups to restore your data anytime in a single click."
       }
     ]
   },
@@ -346,7 +346,7 @@
         "category": "web",
         "badge": "Dual Capability",
         "question": "What is the dual Web and Infrastructure advantage of Net Sure Consulting?",
-        "answer": "Unlike traditional design boutiques that only focus on visual facades, Net Sure Consulting originated within the NET SURE Group with foundational expertise in enterprise mainframes, databases, and secure networks. Your web applications are architected for sub-second rendering speeds, high concurrency resilience, and rigorous cyber compliance."
+        "answer": "Unlike traditional design boutiques that only focus on visual facades, Net Sure Consulting originated within the NET SURE Group with foundational expertise in enterprise architectures, secure databases, and resilient hosting. Your web applications are architected for sub-second rendering speeds, high reliability, and rigorous cyber compliance."
       },
       {
         "id": "faq-4",
@@ -392,7 +392,7 @@
       "In-depth command of SEPA Credit Transfer (SCT) rails and payment protocols",
       "Demonstrated autonomy, precise formal writing, and proactive initiative",
       "Strong executive presence, synthesis capability, and workshop facilitation",
-      "Technical environment: COBOL / Mainframe, system log analysis, SQL query drafting",
+      "Technical environment: Application architecture, data flow analysis, SQL queries",
       "Project toolchain: Postman, SQL, Octane, JIRA",
       "Agile delivery experience and technical English proficiency"
     ],

@@ -86,7 +86,7 @@
     "infra": {
       "num": "04",
       "title": "Infrastructures",
-      "desc": "Experts mainframes et environnements Open, infogérance, hébergement et data centers avec engagement ferme de résultats."
+      "desc": "Hébergement sécurisé en France, maintenance préventive et accompagnement réactif pour assurer le fonctionnement de vos outils 24h/24."
     }
   },
   "differenciators": {
@@ -242,11 +242,11 @@
     "categories": {
       "it": {
         "title": "Informatique & Systèmes",
-        "items": ["SGBD (Oracle, DB2, PostgreSQL)", "Mainframe & Grands Systèmes", "Système & Réseau", "Gestion de Projets IT", "Développement & Méthodes agiles"]
+        "items": ["Bases de Données (Oracle, PostgreSQL)", "Infrastructures & Cloud Sécurisé", "Systèmes & Réseaux d'Entreprise", "Gestion de Projets IT", "Développement Web & Méthodes Agiles"]
       },
       "business": {
         "title": "Cursus Métiers",
-        "items": ["Cursus AMOA (Maîtrise d'ouvrage)", "Cursus AMOE (Maîtrise d'œuvre)", "Développement Mainframe COBOL", "Oracle PL/SQL", "Développement Web moderne (Java, C#, .NET)"]
+        "items": ["Cursus AMOA (Maîtrise d'ouvrage)", "Cursus AMOE (Maîtrise d'œuvre)", "Architecture & Développement Applicatif", "Oracle PL/SQL", "Développement Web Full-Stack"]
       },
       "users": {
         "title": "Utilisateurs & Bureautique",
@@ -260,24 +260,24 @@
   },
   "infrastructure": {
     "frameTitle": "Infrastructures & Cloud",
-    "headline": "Experts Mainframe et Open. Engagement contractuel de résultats.",
-    "intro": "Une infrastructure résiliente est le socle de toute stratégie numérique durable. Nous administrons, sécurisons et industrialisons vos parcs applicatifs.",
+    "headline": "Une infrastructure fiable, rapide et sécurisée, sans aucun jargon technique.",
+    "intro": "La technologie doit simplifier votre quotidien, pas le compliquer. Nous prenons en charge la gestion, la sécurité et la maintenance de vos outils web pour vous permettre de vous concentrer pleinement sur le développement de votre activité.",
     "pillars": [
       {
-        "title": "Infogérance",
-        "desc": "Maintien en condition opérationnelle (MCO) de vos systèmes, middleware, SGBD et réseaux. Gestion opérationnelle continue des applications critiques et forfaits de fonction."
+        "title": "Maintenance & Sérénité au quotidien",
+        "desc": "Surveillance continue de vos sites et applications : nous anticipons les incidents, appliquons les mises à jour de sécurité et veillons au bon fonctionnement de votre activité 24h/24."
       },
       {
-        "title": "Conseils & Architecture",
-        "desc": "Gouvernance IT, organisation de la production informatique, expertise en architecture de systèmes complexes, AMOA technique et direction de projets d'infrastructure."
+        "title": "Conseils & Choix Technologiques",
+        "desc": "Nous vous guidons pour retenir les solutions les plus fiables et adaptées à vos besoins réels, avec une pédagogie bienveillante, des explications claires et sans dépenses inutiles."
       },
       {
-        "title": "Intégration & Transformation",
-        "desc": "Déploiement et outillage des processus DevOps/ITSM, industrialisation de la chaîne de production, maîtrise d'œuvre des grands chantiers de migration."
+        "title": "Évolution & Migrations Fluides",
+        "desc": "Faites évoluer vos outils sereinement : nous transférons vos données et configurons vos nouveaux espaces de travail sans aucune interruption de service pour vos clients."
       },
       {
-        "title": "Expertise Spécifique",
-        "desc": "Réseaux sécurisés, Systèmes d'exploitation unifiés, Middleware d'entreprise, SGBD haute disponibilité et Exploitation 24/7."
+        "title": "Sécurité & Sauvegardes Quotidiennes",
+        "desc": "Protection renforcée contre les cybermenaces, certificats SSL inclus et sauvegardes automatisées quotidiennes pour restaurer vos données à tout instant en un clic."
       }
     ]
   },
@@ -392,7 +392,7 @@
       "Maîtrise approfondie des flux de virements SEPA (SCT / SEPA Credit Transfer)",
       "Grande autonomie, rigueur de formalisation et proactivité",
       "Aisance relationnelle, esprit de synthèse et animation d'ateliers",
-      "Environnement technique : COBOL / Mainframe, analyse de logs, requêtes SQL",
+      "Environnement technique : Architecture applicative, analyse de flux et requêtes SQL",
       "Outillage projet : Postman, SQL, Octane, JIRA",
       "Méthodologie agile et maîtrise de l'anglais technique appréciées"
     ],

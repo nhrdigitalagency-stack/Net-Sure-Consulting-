@@ -1,6 +1,18 @@
 import React from 'react';
 import { useTranslation } from '../i18n/LanguageContext';
-import { Server, Cpu, Network, Database, ArrowRight, ShieldCheck, Activity } from 'lucide-react';
+import {
+  Server,
+  Cpu,
+  Network,
+  Database,
+  ArrowRight,
+  ShieldCheck,
+  Users,
+  CheckCircle2,
+  Clock,
+  Sparkles,
+  HeartHandshake,
+} from 'lucide-react';
 
 interface InfrastructureFrameProps {
   onNavigateToContact: () => void;
@@ -27,10 +39,12 @@ export const InfrastructureFrame: React.FC<InfrastructureFrameProps> = ({ onNavi
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono uppercase text-amber-500 dark:text-amber-400 tracking-widest font-bold bg-amber-500/10 border border-amber-400/30 shadow-xs">
             {t('infrastructure.frameTitle')}
           </span>
-          <span className="hidden sm:inline">Mainframe & Open Systems</span>
+          <span className="hidden sm:inline font-sans text-neutral-500 dark:text-neutral-400">
+            Sérénité, Stabilité & Proximité Humaine
+          </span>
         </div>
 
-        {/* Narrative & High-Tech Data Center Visual Topology */}
+        {/* Narrative & Natural Human Assurance Showcase */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
             <h2 className="text-3xl sm:text-5xl font-display font-extrabold tracking-tight leading-[1.2] pb-2 overflow-visible text-neutral-950 dark:text-white">
@@ -40,53 +54,85 @@ export const InfrastructureFrame: React.FC<InfrastructureFrameProps> = ({ onNavi
               {t('infrastructure.intro')}
             </p>
 
-            <div className="p-4 rounded-2xl border border-amber-500/25 dark:border-amber-400/25 bg-white/90 dark:bg-[#0D0F13]/90 flex items-center justify-between text-xs font-mono shadow-xs">
-              <span className="text-neutral-600 dark:text-neutral-400">Maintien en Condition Opérationnelle</span>
-              <span className="text-amber-500 dark:text-amber-400 font-bold px-2.5 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20">SLA Garanti 99.98%</span>
+            <div className="p-4 rounded-2xl border border-amber-500/25 dark:border-amber-400/25 bg-white/90 dark:bg-[#0D0F13]/90 flex items-center justify-between text-xs shadow-xs">
+              <span className="text-neutral-700 dark:text-neutral-300 font-medium font-sans">
+                Accompagnement continu & préventif
+              </span>
+              <span className="text-amber-500 dark:text-amber-400 font-bold px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 font-mono text-xs">
+                Disponibilité Garantie 99,9%
+              </span>
             </div>
           </div>
 
-          {/* Visual Architecture Topology Card with Rounded 3xl & Gold Trim */}
+          {/* Human-Centered Natural Service & Trust Showcase */}
           <div className="lg:col-span-6">
-            <div className="card-luxury p-6 sm:p-8 rounded-3xl border border-amber-500/30 dark:border-amber-400/30 bg-[#090A0D] text-neutral-100 shadow-2xl space-y-5 font-mono text-xs transition-all">
-              <div className="flex items-center justify-between border-b border-neutral-800 pb-3 text-[11px] text-neutral-400">
-                <span className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse" />
-                  <span className="text-amber-300 font-bold">NET SURE CLOUD & DATA CENTERS</span>
+            <div className="card-luxury p-6 sm:p-8 rounded-3xl border border-amber-500/30 dark:border-amber-400/30 bg-[#090A0D] text-neutral-100 shadow-2xl space-y-6 transition-all">
+              <div className="flex items-center justify-between border-b border-neutral-800 pb-4">
+                <div className="flex items-center gap-2.5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="font-display font-bold text-white text-base tracking-tight">
+                    Accompagnement Sur-Mesure & Sérénité
+                  </span>
+                </div>
+                <span className="text-amber-400 font-mono text-[11px] font-bold px-3 py-1 rounded-full bg-amber-500/15 border border-amber-400/30 flex items-center gap-1.5">
+                  <Sparkles className="w-3 h-3 text-amber-400" />
+                  <span>Équipe Dédiée à Paris</span>
                 </span>
-                <span className="text-amber-400 font-bold px-2 py-0.5 rounded-full bg-amber-500/15 border border-amber-400/30">ONLINE · MCO 24/7</span>
               </div>
 
-              {/* Server Nodes Grid with Rounded Corners */}
-              <div className="grid grid-cols-2 gap-3">
-                <div className="p-3.5 rounded-2xl border border-neutral-800 bg-neutral-900/70 space-y-1">
-                  <span className="text-neutral-400 text-[10px] block">NODE 01 · MAINFRAME</span>
-                  <div className="text-white font-bold text-sm">IBM z/OS Enterprise</div>
-                  <span className="text-[10px] text-amber-400 font-bold">COBOL / CICS / DB2</span>
+              {/* 4 Natural, Human and Clear Benefits */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                <div className="p-4 rounded-2xl border border-neutral-800/80 bg-neutral-900/60 space-y-2 hover:border-amber-500/30 transition-all">
+                  <div className="flex items-center justify-between">
+                    <span className="text-amber-400 text-xs font-bold font-mono">01 · PROXIMITÉ</span>
+                    <Users className="w-4 h-4 text-amber-400" />
+                  </div>
+                  <div className="text-white font-bold text-sm">Interlocuteur Dédié</div>
+                  <p className="text-neutral-400 text-xs leading-relaxed font-sans">
+                    Un conseiller senior attitré à Paris 18e, disponible par téléphone ou email sans standard automatisé.
+                  </p>
                 </div>
 
-                <div className="p-3.5 rounded-2xl border border-neutral-800 bg-neutral-900/70 space-y-1">
-                  <span className="text-neutral-400 text-[10px] block">NODE 02 · OPEN RDBMS</span>
-                  <div className="text-white font-bold text-sm">PostgreSQL Cluster</div>
-                  <span className="text-[10px] text-amber-400 font-bold">High-Availability HA</span>
+                <div className="p-4 rounded-2xl border border-neutral-800/80 bg-neutral-900/60 space-y-2 hover:border-amber-500/30 transition-all">
+                  <div className="flex items-center justify-between">
+                    <span className="text-amber-400 text-xs font-bold font-mono">02 · DISPONIBILITÉ</span>
+                    <Clock className="w-4 h-4 text-amber-400" />
+                  </div>
+                  <div className="text-white font-bold text-sm">Disponibilité 24h/24</div>
+                  <p className="text-neutral-400 text-xs leading-relaxed font-sans">
+                    Vos sites et outils restent accessibles en continu avec des sauvegardes quotidiennes automatiques.
+                  </p>
                 </div>
 
-                <div className="p-3.5 rounded-2xl border border-neutral-800 bg-neutral-900/70 space-y-1">
-                  <span className="text-neutral-400 text-[10px] block">NODE 03 · REVERSE PROXY</span>
-                  <div className="text-white font-bold text-sm">LiteSpeed / Nginx Edge</div>
-                  <span className="text-[10px] text-amber-400 font-bold">SSL A+ · Latence &lt; 15ms</span>
+                <div className="p-4 rounded-2xl border border-neutral-800/80 bg-neutral-900/60 space-y-2 hover:border-amber-500/30 transition-all">
+                  <div className="flex items-center justify-between">
+                    <span className="text-amber-400 text-xs font-bold font-mono">03 · SOUVERAINETÉ</span>
+                    <ShieldCheck className="w-4 h-4 text-amber-400" />
+                  </div>
+                  <div className="text-white font-bold text-sm">Données 100% en France</div>
+                  <p className="text-neutral-400 text-xs leading-relaxed font-sans">
+                    Hébergement souverain sécurisé à Paris, conformité RGPD intégrale et certificats de protection inclus.
+                  </p>
                 </div>
 
-                <div className="p-3.5 rounded-2xl border border-neutral-800 bg-neutral-900/70 space-y-1">
-                  <span className="text-neutral-400 text-[10px] block">NODE 04 · SÉCURITÉ RGPD</span>
-                  <div className="text-white font-bold text-sm">Chiffrement AES-256</div>
-                  <span className="text-[10px] text-amber-400 font-bold">Datacenter France (Paris)</span>
+                <div className="p-4 rounded-2xl border border-neutral-800/80 bg-neutral-900/60 space-y-2 hover:border-amber-500/30 transition-all">
+                  <div className="flex items-center justify-between">
+                    <span className="text-amber-400 text-xs font-bold font-mono">04 · CLARTÉ</span>
+                    <HeartHandshake className="w-4 h-4 text-amber-400" />
+                  </div>
+                  <div className="text-white font-bold text-sm">Zéro Jargon, 100% Écoute</div>
+                  <p className="text-neutral-400 text-xs leading-relaxed font-sans">
+                    Nous gérons toute la technique pour vous et vous expliquons chaque démarche avec simplicité et clarté.
+                  </p>
                 </div>
               </div>
 
-              <div className="pt-2 border-t border-neutral-800 flex items-center justify-between text-[11px] text-neutral-400">
-                <span>Supervision continue & Astreintes</span>
-                <span className="text-amber-300 font-semibold">Paris & Île-de-France</span>
+              <div className="pt-3 border-t border-neutral-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-neutral-400 font-sans">
+                <span className="flex items-center gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <span>Siège & équipe au 40 rue Damrémont, 75018 Paris</span>
+                </span>
+                <span className="text-amber-300 font-medium">Réponse sous 2h ouvrées</span>
               </div>
             </div>
           </div>
@@ -103,7 +149,7 @@ export const InfrastructureFrame: React.FC<InfrastructureFrameProps> = ({ onNavi
               >
                 <div className="flex items-center justify-between pb-3 border-b border-neutral-100 dark:border-neutral-900">
                   <span className="text-xs font-mono text-amber-500 dark:text-amber-400 font-bold px-2.5 py-0.5 rounded-full bg-amber-500/10 border border-amber-400/30">
-                    PILIER 0{idx + 1}
+                    ENGAGEMENT 0{idx + 1}
                   </span>
                   <div className="w-9 h-9 rounded-full flex items-center justify-center bg-amber-500/10 border border-amber-400/20">
                     <IconComp className="w-4 h-4 text-amber-500 dark:text-amber-400" />
@@ -122,14 +168,14 @@ export const InfrastructureFrame: React.FC<InfrastructureFrameProps> = ({ onNavi
 
         {/* Action Callout with Rounded 3xl & Gold Button */}
         <div className="card-luxury p-8 rounded-3xl border border-amber-500/25 dark:border-amber-400/25 bg-white/95 dark:bg-[#0D0F13]/95 flex flex-col sm:flex-row sm:items-center justify-between gap-6 shadow-md">
-          <div className="text-xs sm:text-sm font-mono text-neutral-700 dark:text-neutral-300 max-w-2xl">
-            Forfaits d'infogérance personnalisés avec SLA et astreintes 24/7 sur systèmes critiques.
+          <div className="text-xs sm:text-sm font-sans text-neutral-700 dark:text-neutral-300 max-w-2xl leading-relaxed">
+            Besoin d'un accompagnement personnalisé ou de conseils clairs pour vos outils web ? Échangez directement avec notre équipe.
           </div>
           <button
             onClick={onNavigateToContact}
             className="btn-gold px-7 py-3.5 text-xs font-bold flex items-center gap-2 shrink-0 self-start sm:self-auto transition-all shadow-[0_4px_15px_rgba(212,175,55,0.35)] cursor-pointer"
           >
-            <span>Demander un audit d'infrastructure</span>
+            <span>Échanger avec un conseiller</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>

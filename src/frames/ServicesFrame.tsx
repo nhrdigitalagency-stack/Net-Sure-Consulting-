@@ -42,7 +42,7 @@ export const ServicesFrame: React.FC<ServicesFrameProps> = ({ onNavigateToFrame 
       title: t('services.infra.title'),
       desc: t('services.infra.desc'),
       targetFrame: 8,
-      sublabel: 'Mainframes, Open & infogérance MCO',
+      sublabel: 'Hébergement sécurisé & sérénité au quotidien',
       icon: Server,
       highlight: false,
     },

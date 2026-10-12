@@ -79,7 +79,7 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
     'Création Site E-Commerce (1 499 € HT)',
     'Formations Professionnelles (Partenariat AGENIUS)',
     'Conseil & Architecture SI (Assurance)',
-    'Infrastructures & Infogérance Mainframe / Open',
+    'Hébergement Sécurisé & Maintenance de Sites',
     'Autre besoin spécifique',
   ];
 
