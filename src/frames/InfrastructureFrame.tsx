@@ -61,6 +61,28 @@ export const InfrastructureFrame: React.FC<InfrastructureFrameProps> = ({ onNavi
                 Disponibilité Garantie 99,9%
               </span>
             </div>
+
+            {/* Visual Infrastructure & Work Environment Card */}
+            <div className="relative rounded-3xl overflow-hidden border border-amber-500/30 dark:border-amber-400/30 shadow-xl group">
+              <picture>
+                <source srcSet="/images/office-infrastructure.webp" type="image/webp" />
+                <img
+                  src="/images/office-infrastructure.jpg"
+                  alt="Infrastructures sécurisées & environnement de travail Net Sure Consulting"
+                  className="w-full h-52 sm:h-64 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
+              </picture>
+              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/85 via-neutral-950/20 to-transparent" />
+              <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-white">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="font-semibold font-display tracking-tight text-[11px] sm:text-xs">
+                    Environnement Technique & Hébergement Sécurisé
+                  </span>
+                </div>
+                <span className="font-mono text-[10px] text-amber-300 font-bold">Paris 18e</span>
+              </div>
+            </div>
           </div>
 
           {/* Human-Centered Natural Service & Trust Showcase */}

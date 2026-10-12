@@ -50,16 +50,19 @@ export const HeroFrame: React.FC<HeroFrameProps> = ({
       id="frame-1"
       className="section-hover-gold relative w-full min-h-[92vh] flex flex-col justify-center pt-24 pb-16 sm:pt-32 sm:pb-24 px-4 sm:px-6 lg:px-12 border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#090A0B] text-neutral-900 dark:text-neutral-50 transition-colors duration-300 overflow-hidden"
     >
-      {/* Background Image reflecting the company services: Google Maps Top 3 Ranking & Bespoke Web Creation */}
+      {/* Background Image: Équipe de développeurs au travail */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden select-none z-0">
-        <img
-          src={customBg || "/hero-service-background.svg"}
-          alt="Net Sure Consulting — Référencement Google Maps & Création Web"
-          className="w-full h-full object-cover object-right-top lg:object-center opacity-45 dark:opacity-40 filter saturate-110"
-          referrerPolicy="no-referrer"
-        />
+        <picture>
+          <source srcSet={customBg || "/images/hero-developers.webp"} type="image/webp" />
+          <img
+            src={customBg || "/images/hero-developers.png"}
+            alt="Équipe de développeurs Net Sure Consulting au travail"
+            className="w-full h-full object-cover object-center lg:object-right opacity-40 dark:opacity-35 filter saturate-110 contrast-105"
+            referrerPolicy="no-referrer"
+          />
+        </picture>
         {/* Directional Vignettes for Maximum Legibility & Depth */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-white/30 dark:from-[#090A0B]/95 dark:via-[#090A0B]/85 dark:to-[#090A0B]/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-white/35 dark:from-[#090A0B]/95 dark:via-[#090A0B]/85 dark:to-[#090A0B]/45" />
         <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-transparent to-white dark:from-[#090A0B]/60 dark:via-transparent dark:to-[#090A0B]" />
       </div>
 
@@ -82,7 +85,7 @@ export const HeroFrame: React.FC<HeroFrameProps> = ({
               {/* Background indicator & photo customization option */}
               <div className="inline-flex items-center gap-1.5 text-[11px] font-mono text-neutral-600 dark:text-neutral-300 bg-neutral-100/90 dark:bg-neutral-900/90 px-3 py-1 rounded-full border border-neutral-300 dark:border-neutral-700/80 backdrop-blur-xs">
                 <ImageIcon className="w-3.5 h-3.5 text-amber-500" />
-                <span>Services Google Maps & Web</span>
+                <span>Équipe Développeurs Net Sure</span>
                 <button
                   type="button"
                   onClick={() => fileInputRef.current?.click()}
@@ -222,6 +225,29 @@ export const HeroFrame: React.FC<HeroFrameProps> = ({
                   <span>Engagement Contractuel 90 Jours</span>
                 </span>
                 <span className="text-amber-600 dark:text-amber-400 font-bold px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20">100% Garanti</span>
+              </div>
+
+              {/* Dedicated Development Team Badge */}
+              <div className="mt-3 p-3 rounded-2xl border border-amber-500/25 dark:border-amber-400/25 bg-neutral-50/90 dark:bg-[#07080A]/90 backdrop-blur-md flex items-center gap-3.5 shadow-sm">
+                <div className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0 border border-amber-400/40">
+                  <picture>
+                    <source srcSet="/images/hero-developers.webp" type="image/webp" />
+                    <img
+                      src="/images/hero-developers.png"
+                      alt="Équipe technique Net Sure Consulting"
+                      className="w-full h-full object-cover"
+                    />
+                  </picture>
+                </div>
+                <div className="text-xs space-y-0.5 leading-snug">
+                  <div className="font-bold text-neutral-950 dark:text-white flex items-center gap-1.5 font-display">
+                    <span>Équipe de Développeurs Dédiée</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  </div>
+                  <div className="text-neutral-500 dark:text-neutral-400 text-[11px] font-sans">
+                    Ingénieurs web & spécialistes SEO basés à Paris 18e
+                  </div>
+                </div>
               </div>
             </div>
           </div>

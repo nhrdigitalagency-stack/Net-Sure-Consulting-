@@ -53,6 +53,28 @@ export const AboutFrame: React.FC<AboutFrameProps> = ({ onNavigateToContact }) =
               {t('about.story')}
             </p>
 
+            {/* Team Collaboration Photo */}
+            <div className="relative rounded-3xl overflow-hidden border border-amber-500/30 dark:border-amber-400/30 shadow-xl group">
+              <picture>
+                <source srcSet="/images/team-collaboration.webp" type="image/webp" />
+                <img
+                  src="/images/team-collaboration.png"
+                  alt="Collaboration en équipe au bureau — Net Sure Consulting Paris"
+                  className="w-full h-56 sm:h-64 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
+              </picture>
+              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/85 via-neutral-950/20 to-transparent" />
+              <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-white">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="font-semibold font-display tracking-tight text-[11px] sm:text-xs">
+                    Collaboration & Cadrage Stratégique
+                  </span>
+                </div>
+                <span className="font-mono text-[10px] text-amber-300">Siège Paris 18e</span>
+              </div>
+            </div>
+
             <div className="card-luxury p-6 rounded-3xl border border-amber-500/20 dark:border-amber-400/20 bg-neutral-50/80 dark:bg-[#0D0F13]/80 space-y-3 shadow-xs">
               <span className="text-xs font-mono uppercase text-amber-500 dark:text-amber-400 block font-bold">
                 {t('about.valuesTitle')}
