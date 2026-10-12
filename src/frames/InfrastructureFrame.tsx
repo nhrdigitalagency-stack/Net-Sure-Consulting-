@@ -10,7 +10,6 @@ import {
   Users,
   CheckCircle2,
   Clock,
-  Sparkles,
   HeartHandshake,
 } from 'lucide-react';
 
@@ -75,7 +74,7 @@ export const InfrastructureFrame: React.FC<InfrastructureFrameProps> = ({ onNavi
                   </span>
                 </div>
                 <span className="text-amber-400 font-mono text-[11px] font-bold px-3 py-1 rounded-full bg-amber-500/15 border border-amber-400/30 flex items-center gap-1.5">
-                  <Sparkles className="w-3 h-3 text-amber-400" />
+                  <Users className="w-3 h-3 text-amber-400" />
                   <span>Équipe Dédiée à Paris</span>
                 </span>
               </div>

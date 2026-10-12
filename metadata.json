@@ -1,6 +1,6 @@
 {
-  "name": "Net Sure Consulting – Référencement & Digital",
+  "name": "Net Sure Consulting – Référencement Google Maps & Création Web",
   "description": "Site officiel de Net Sure Consulting, ESN parisienne (Paris 18e) spécialisée en référencement local Google Maps, création de sites web sur mesure, conseil et infrastructures.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": []
 }

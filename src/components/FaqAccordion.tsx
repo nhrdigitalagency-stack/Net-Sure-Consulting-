@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { useTranslation } from '../i18n/LanguageContext';
-import { ChevronDown, HelpCircle, Search, ShieldCheck, Sparkles, MapPin, Globe } from 'lucide-react';
+import { ChevronDown, HelpCircle, Search, ShieldCheck, MapPin, Globe } from 'lucide-react';
 
 interface FaqItem {
   id: string;
@@ -76,7 +76,7 @@ export const FaqAccordion: React.FC = () => {
         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-400/40 text-[11px] font-mono text-amber-300 font-bold uppercase tracking-wider">
-              <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
+              <HelpCircle className="w-3.5 h-3.5 text-amber-400" />
               <span>{t('about.faqTitle')}</span>
             </div>
             <h3 className="text-2xl sm:text-3xl font-display font-extrabold text-white tracking-tight">
