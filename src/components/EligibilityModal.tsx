@@ -75,13 +75,13 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({
     <div
       role="dialog"
       aria-modal="true"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-md animate-in fade-in duration-200"
     >
-      <div className="relative w-full max-w-2xl bg-white dark:bg-[#111315] border border-neutral-300 dark:border-neutral-800 p-6 sm:p-8 shadow-2xl text-neutral-900 dark:text-neutral-100 max-h-[90vh] overflow-y-auto">
+      <div className="card-luxury relative w-full max-w-2xl bg-white/95 dark:bg-[#0D0F13]/95 border border-amber-500/30 dark:border-amber-400/30 rounded-3xl p-6 sm:p-8 shadow-2xl text-neutral-900 dark:text-neutral-100 max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="flex items-start justify-between pb-5 border-b border-neutral-200 dark:border-neutral-800">
           <div>
-            <div className="text-xs uppercase font-mono tracking-wider text-[#144A32] dark:text-[#22C55E] mb-1">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs uppercase font-mono tracking-wider text-amber-500 dark:text-amber-400 bg-amber-500/10 border border-amber-400/30 mb-2 font-bold">
               Diagnostic Immédiat · Étape {step}/4
             </div>
             <h2 className="text-xl sm:text-2xl font-display font-bold">
@@ -93,17 +93,17 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 border border-neutral-200 dark:border-neutral-700 text-neutral-500 hover:text-neutral-900 dark:hover:text-white"
+            className="w-9 h-9 rounded-full flex items-center justify-center border border-neutral-200 dark:border-neutral-700 text-neutral-500 hover:text-amber-400 hover:border-amber-400 transition-colors cursor-pointer"
             aria-label={t('eligibility.close')}
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        {/* Progress Bar */}
-        <div className="w-full bg-neutral-100 dark:bg-neutral-800 h-1 my-6">
+        {/* Progress Bar with Rounded Full Curves */}
+        <div className="w-full bg-neutral-100 dark:bg-neutral-800 h-1.5 my-6 rounded-full overflow-hidden">
           <div
-            className="bg-[#144A32] dark:bg-[#22C55E] h-1 transition-all duration-300"
+            className="bg-gradient-to-r from-[#D4AF37] via-[#F3C64F] to-[#C5A059] h-full rounded-full transition-all duration-300 shadow-[0_0_10px_rgba(212,175,55,0.4)]"
             style={{ width: `${(step / 4) * 100}%` }}
           />
         </div>
@@ -122,15 +122,15 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({
                 <button
                   key={item.id}
                   onClick={() => setSelectedActivity(item.id)}
-                  className={`w-full text-left p-3.5 border transition-all flex items-center justify-between text-sm ${
+                  className={`w-full text-left p-4 rounded-2xl border transition-all flex items-center justify-between text-sm cursor-pointer ${
                     selectedActivity === item.id
-                      ? 'border-[#144A32] dark:border-[#22C55E] bg-[#144A32]/5 dark:bg-[#22C55E]/10 font-semibold'
-                      : 'border-neutral-200 dark:border-neutral-800 hover:border-neutral-400 dark:hover:border-neutral-700'
+                      ? 'border-amber-400 bg-amber-500/10 dark:bg-amber-400/10 font-bold text-amber-600 dark:text-amber-300 shadow-[0_0_15px_rgba(212,175,55,0.15)]'
+                      : 'border-neutral-200 dark:border-neutral-800 hover:border-amber-400/50 hover:bg-neutral-50 dark:hover:bg-neutral-900/60'
                   }`}
                 >
                   <span>{item.label}</span>
                   {selectedActivity === item.id && (
-                    <CheckCircle2 className="w-4 h-4 text-[#144A32] dark:text-[#22C55E]" />
+                    <CheckCircle2 className="w-4 h-4 text-amber-500 dark:text-amber-400" />
                   )}
                 </button>
               ))}
@@ -152,18 +152,18 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({
                 <button
                   key={item.id}
                   onClick={() => setSelectedLocation(item.id)}
-                  className={`w-full text-left p-3.5 border transition-all flex items-center justify-between text-sm ${
+                  className={`w-full text-left p-4 rounded-2xl border transition-all flex items-center justify-between text-sm cursor-pointer ${
                     selectedLocation === item.id
-                      ? 'border-[#144A32] dark:border-[#22C55E] bg-[#144A32]/5 dark:bg-[#22C55E]/10 font-semibold'
-                      : 'border-neutral-200 dark:border-neutral-800 hover:border-neutral-400 dark:hover:border-neutral-700'
+                      ? 'border-amber-400 bg-amber-500/10 dark:bg-amber-400/10 font-bold text-amber-600 dark:text-amber-300 shadow-[0_0_15px_rgba(212,175,55,0.15)]'
+                      : 'border-neutral-200 dark:border-neutral-800 hover:border-amber-400/50 hover:bg-neutral-50 dark:hover:bg-neutral-900/60'
                   }`}
                 >
                   <span className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-neutral-400 shrink-0" />
+                    <MapPin className="w-4 h-4 text-amber-500 shrink-0" />
                     <span>{item.label}</span>
                   </span>
                   {selectedLocation === item.id && (
-                    <CheckCircle2 className="w-4 h-4 text-[#144A32] dark:text-[#22C55E]" />
+                    <CheckCircle2 className="w-4 h-4 text-amber-500 dark:text-amber-400" />
                   )}
                 </button>
               ))}
@@ -185,15 +185,15 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({
                 <button
                   key={item.id}
                   onClick={() => setSelectedStatus(item.id)}
-                  className={`w-full text-left p-3.5 border transition-all flex items-center justify-between text-sm ${
+                  className={`w-full text-left p-4 rounded-2xl border transition-all flex items-center justify-between text-sm cursor-pointer ${
                     selectedStatus === item.id
-                      ? 'border-[#144A32] dark:border-[#22C55E] bg-[#144A32]/5 dark:bg-[#22C55E]/10 font-semibold'
-                      : 'border-neutral-200 dark:border-neutral-800 hover:border-neutral-400 dark:hover:border-neutral-700'
+                      ? 'border-amber-400 bg-amber-500/10 dark:bg-amber-400/10 font-bold text-amber-600 dark:text-amber-300 shadow-[0_0_15px_rgba(212,175,55,0.15)]'
+                      : 'border-neutral-200 dark:border-neutral-800 hover:border-amber-400/50 hover:bg-neutral-50 dark:hover:bg-neutral-900/60'
                   }`}
                 >
                   <span>{item.label}</span>
                   {selectedStatus === item.id && (
-                    <CheckCircle2 className="w-4 h-4 text-[#144A32] dark:text-[#22C55E]" />
+                    <CheckCircle2 className="w-4 h-4 text-amber-500 dark:text-amber-400" />
                   )}
                 </button>
               ))}
@@ -204,12 +204,12 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({
         {/* Step 4: Results */}
         {step === 4 && (
           <div className="space-y-6 pt-2">
-            <div className="p-4 sm:p-5 border border-[#144A32]/30 dark:border-[#22C55E]/30 bg-[#144A32]/5 dark:bg-[#22C55E]/5 space-y-3">
-              <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#144A32] dark:text-[#22C55E]">
-                <ShieldCheck className="w-4 h-4" />
+            <div className="p-5 sm:p-6 rounded-2xl border border-amber-400/60 bg-amber-500/10 dark:bg-amber-400/10 space-y-3 shadow-[0_0_25px_rgba(212,175,55,0.15)]">
+              <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-amber-500 dark:text-amber-400 font-bold">
+                <ShieldCheck className="w-4 h-4 text-amber-500" />
                 <span>{t('eligibility.scoreLabel')}</span>
               </div>
-              <div className="text-2xl sm:text-3xl font-display font-bold text-neutral-950 dark:text-white">
+              <div className="text-2xl sm:text-3xl font-display font-extrabold text-neutral-950 dark:text-white">
                 {t('eligibility.scoreVal')}
               </div>
               <p className="text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
@@ -217,20 +217,20 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-3 text-xs border border-neutral-200 dark:border-neutral-800 p-4">
+            <div className="grid grid-cols-2 gap-3 text-xs border border-neutral-200 dark:border-neutral-800 p-4 rounded-2xl bg-neutral-50/50 dark:bg-neutral-900/50">
               <div>
                 <span className="text-neutral-400 block font-mono">Délai estimé</span>
-                <span className="font-semibold text-sm">60 à 90 jours</span>
+                <span className="font-bold text-sm text-neutral-950 dark:text-white">60 à 90 jours</span>
               </div>
               <div>
                 <span className="text-neutral-400 block font-mono">Formule conseillée</span>
-                <span className="font-semibold text-sm">Pack SEO Premium (649 € HT)</span>
+                <span className="font-bold text-sm text-amber-500 dark:text-amber-400">Pack SEO Premium (649 € HT)</span>
               </div>
             </div>
 
             <button
               onClick={handleTransfer}
-              className="w-full py-3.5 px-4 text-center text-sm font-semibold text-white bg-[#144A32] hover:bg-[#0E3624] dark:bg-[#22C55E] dark:hover:bg-[#16A34A] dark:text-neutral-950 transition-colors flex items-center justify-center gap-2"
+              className="btn-gold w-full py-4 px-4 text-center text-sm font-bold flex items-center justify-center gap-2 cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.35)]"
             >
               <span>{t('eligibility.ctaTransfer')}</span>
               <ArrowRight className="w-4 h-4" />
@@ -244,7 +244,7 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({
             {step > 1 ? (
               <button
                 onClick={handlePrev}
-                className="px-4 py-2 text-xs font-semibold border border-neutral-300 dark:border-neutral-700 hover:border-neutral-500 transition-colors flex items-center gap-1.5"
+                className="px-4 py-2 rounded-full text-xs font-semibold border border-neutral-300 dark:border-neutral-700 hover:border-amber-400 transition-colors flex items-center gap-1.5 cursor-pointer"
               >
                 <ChevronLeft className="w-3.5 h-3.5" />
                 <span>{t('eligibility.prev')}</span>
@@ -255,7 +255,7 @@ export const EligibilityModal: React.FC<EligibilityModalProps> = ({
 
             <button
               onClick={handleNext}
-              className="px-5 py-2 text-xs font-semibold text-white bg-neutral-900 dark:bg-neutral-100 dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-white transition-colors flex items-center gap-1.5"
+              className="btn-gold px-6 py-2 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer"
             >
               <span>{t('eligibility.next')}</span>
               <ChevronRight className="w-3.5 h-3.5" />

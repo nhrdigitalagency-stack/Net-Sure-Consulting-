@@ -76,7 +76,7 @@ export const Header: React.FC<HeaderProps> = ({ activeFrame, onNavigate, onOpenE
                 >
                   {link.label}
                   {isActive && (
-                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#144A32] dark:bg-[#22C55E]" />
+                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-amber-400 to-amber-500 rounded-full shadow-[0_0_8px_rgba(212,175,55,0.6)]" />
                   )}
                 </button>
               );
@@ -85,13 +85,13 @@ export const Header: React.FC<HeaderProps> = ({ activeFrame, onNavigate, onOpenE
 
           {/* Zone 3: Actions (Language, Theme, CTA, Mobile Menu) */}
           <div className="flex items-center gap-2.5 sm:gap-4 shrink-0">
-            {/* Lang switch */}
-            <div className="flex items-center border border-neutral-300/80 dark:border-neutral-700/80 bg-transparent p-0.5 text-xs font-semibold">
+            {/* Lang switch with Rounded Full Pill */}
+            <div className="flex items-center rounded-full border border-neutral-300 dark:border-neutral-700/80 bg-neutral-100/90 dark:bg-neutral-900/90 p-0.5 text-xs font-semibold backdrop-blur-xs">
               <button
                 onClick={() => setLanguage('fr')}
-                className={`px-2 py-1 transition-colors ${
+                className={`px-2.5 py-1 rounded-full transition-all cursor-pointer ${
                   language === 'fr'
-                    ? 'bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900'
+                    ? 'bg-gradient-to-r from-[#D4AF37] to-[#F3C64F] text-neutral-950 font-bold shadow-xs'
                     : 'text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white'
                 }`}
                 aria-label="Français"
@@ -100,9 +100,9 @@ export const Header: React.FC<HeaderProps> = ({ activeFrame, onNavigate, onOpenE
               </button>
               <button
                 onClick={() => setLanguage('en')}
-                className={`px-2 py-1 transition-colors ${
+                className={`px-2.5 py-1 rounded-full transition-all cursor-pointer ${
                   language === 'en'
-                    ? 'bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900'
+                    ? 'bg-gradient-to-r from-[#D4AF37] to-[#F3C64F] text-neutral-950 font-bold shadow-xs'
                     : 'text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white'
                 }`}
                 aria-label="English"
@@ -114,11 +114,11 @@ export const Header: React.FC<HeaderProps> = ({ activeFrame, onNavigate, onOpenE
             {/* Theme switch */}
             <button
               onClick={toggleTheme}
-              className="p-1.5 border border-neutral-300/80 dark:border-neutral-700/80 bg-transparent text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white hover:border-neutral-400 dark:hover:border-neutral-600 transition-colors"
+              className="p-2 rounded-full border border-neutral-300 dark:border-neutral-700/80 bg-transparent text-neutral-700 dark:text-neutral-300 hover:text-amber-500 dark:hover:text-amber-400 hover:border-amber-400/50 transition-all cursor-pointer"
               aria-label={theme === 'dark' ? t('nav.themeLight') : t('nav.themeDark')}
             >
               {theme === 'dark' ? (
-                <Sun className="w-4 h-4 text-neutral-200" />
+                <Sun className="w-4 h-4 text-amber-400" />
               ) : (
                 <Moon className="w-4 h-4 text-neutral-800" />
               )}
@@ -127,16 +127,16 @@ export const Header: React.FC<HeaderProps> = ({ activeFrame, onNavigate, onOpenE
             {/* Primary CTA */}
             <button
               onClick={() => handleNavClick(11)}
-              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold tracking-tight text-white bg-[#144A32] hover:bg-[#0E3624] dark:bg-[#22C55E] dark:hover:bg-[#16A34A] dark:text-neutral-950 transition-colors whitespace-nowrap shrink-0"
+              className="hidden sm:inline-flex items-center gap-1.5 btn-gold px-4 py-2 text-xs font-bold tracking-tight whitespace-nowrap shrink-0 cursor-pointer shadow-[0_2px_12px_rgba(212,175,55,0.35)]"
             >
               <span>{t('nav.cta')}</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </button>
 
-            {/* Mobile hamburger (Transparent) */}
+            {/* Mobile hamburger (Transparent as requested) */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 bg-transparent text-neutral-800 dark:text-neutral-200 hover:text-neutral-950 dark:hover:text-white hover:bg-neutral-500/10 dark:hover:bg-neutral-400/10 transition-colors rounded-none focus:outline-hidden"
+              className="lg:hidden p-2 rounded-full bg-transparent text-neutral-800 dark:text-neutral-200 hover:text-amber-400 hover:bg-neutral-500/10 dark:hover:bg-neutral-400/10 transition-colors focus:outline-hidden cursor-pointer"
               aria-label={mobileMenuOpen ? t('nav.menuClose') : t('nav.menuOpen')}
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -172,9 +172,9 @@ export const Header: React.FC<HeaderProps> = ({ activeFrame, onNavigate, onOpenE
                 <button
                   key={item.frame}
                   onClick={() => handleNavClick(item.frame)}
-                  className={`text-left text-lg font-display py-2 border-b border-neutral-100 dark:border-neutral-900 flex items-center justify-between ${
+                  className={`text-left text-lg font-display py-2 border-b border-neutral-100 dark:border-neutral-900 flex items-center justify-between transition-colors ${
                     activeFrame === item.frame
-                      ? 'text-[#144A32] dark:text-[#22C55E] font-semibold'
+                      ? 'text-amber-500 dark:text-amber-400 font-semibold pl-2 border-l-2 border-amber-400'
                       : 'text-neutral-800 dark:text-neutral-200'
                   }`}
                 >
@@ -193,7 +193,7 @@ export const Header: React.FC<HeaderProps> = ({ activeFrame, onNavigate, onOpenE
               <span className="text-neutral-500 dark:text-neutral-400">Mode d'affichage</span>
               <button
                 onClick={toggleTheme}
-                className="flex items-center gap-2 px-3 py-1.5 border border-neutral-300 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-sans"
+                className="flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-amber-500/30 dark:border-amber-400/30 bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 font-sans cursor-pointer hover:border-amber-400 transition-all"
               >
                 {theme === 'dark' ? (
                   <>
@@ -214,13 +214,13 @@ export const Header: React.FC<HeaderProps> = ({ activeFrame, onNavigate, onOpenE
                 setMobileMenuOpen(false);
                 onOpenEligibility();
               }}
-              className="w-full py-3 text-center text-sm font-semibold border border-[#144A32] dark:border-[#22C55E] text-[#144A32] dark:text-[#22C55E] cursor-pointer"
+              className="btn-noir w-full py-3 text-center text-sm font-semibold cursor-pointer"
             >
               {t('hero.ctaEligibility')}
             </button>
             <button
               onClick={() => handleNavClick(11)}
-              className="w-full py-3 text-center text-sm font-semibold bg-[#144A32] dark:bg-[#22C55E] text-white dark:text-neutral-950 cursor-pointer shadow-md"
+              className="btn-gold w-full py-3 text-center text-sm font-bold cursor-pointer shadow-md"
             >
               {t('nav.cta')}
             </button>

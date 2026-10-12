@@ -320,31 +320,61 @@
     "partnersTitle": "Partners & Institutional Ecosystem",
     "faqTitle": "Frequently Asked Questions (FAQ)",
     "faqSubtitle": "Understanding our local search methodology, software engineering principles, and contractual SLA commitments.",
+    "faqCategories": {
+      "all": "All Questions",
+      "seo": "SEO & Google Maps",
+      "web": "Web & Infrastructure",
+      "commitments": "Guarantees & SLA"
+    },
     "faq": [
       {
         "id": "faq-1",
+        "category": "seo",
+        "badge": "Top 3 Local Pack",
         "question": "How does the contractual Google Maps Top 3 in 90 days guarantee work?",
         "answer": "We initiate each engagement with an exhaustive technical audit of your Google Business listing and catchment area. We eliminate duplicates, secure your ownership, and synchronize your strict NAP (Name, Address, Phone) consistency across all primary directories. We optimize core and secondary categories, configure products and services, and deploy an automated, verified review collection cadence alongside targeted geo-posts. If Top 3 rankings are not secured within 90 days, our engineers continue optimization at no additional cost until the contracted result is delivered."
       },
       {
         "id": "faq-2",
+        "category": "commitments",
+        "badge": "ESN SLA Discipline",
         "question": "Why is client support and communication handled exclusively by written email within 24h?",
         "answer": "As a disciplined Digital Services Company (ESN), written communication ensures 100% auditability, precise engineering tracking, and zero ambiguity regarding deliverables. Our contractual standard is unconditional: every message sent to contact@cnetsure.com receives a comprehensive technical reply within 24 business hours."
       },
       {
         "id": "faq-3",
+        "category": "web",
+        "badge": "Dual Capability",
         "question": "What is the dual Web and Infrastructure advantage of Net Sure Consulting?",
         "answer": "Unlike traditional design boutiques that only focus on visual facades, Net Sure Consulting originated within the NET SURE Group with foundational expertise in enterprise mainframes, databases, and secure networks. Your web applications are architected for sub-second rendering speeds, high concurrency resilience, and rigorous cyber compliance."
       },
       {
         "id": "faq-4",
+        "category": "commitments",
+        "badge": "50/50 Staged Deposit",
         "question": "Do you offer staged payments or deposit facilities for SMBs and independent practices?",
         "answer": "Yes. To protect cash flow for local merchants, craftsmen, and regulated professions, the majority of our standard packages (Visibility Pack at 399 € excl. VAT, SEO Premium Pack at 649 € excl. VAT, Showcase and E-Commerce sites) feature a 50% initial deposit with the remaining balance due upon milestone verification. The Visibility Premium Pack (4,200 € excl. VAT) is also billed in 50/50 installments."
       },
       {
         "id": "faq-5",
+        "category": "commitments",
+        "badge": "100% Asset Ownership",
         "question": "Do we retain complete ownership of our platforms and digital assets post-delivery?",
         "answer": "Completely. You maintain full, perpetual ownership of all source code, domain names, Google Maps profiles, and client databases. Furthermore, through our certified partnership with AGENIUS, we train your personnel to operate and update your platforms with total independence."
+      },
+      {
+        "id": "faq-6",
+        "category": "seo",
+        "badge": "Local Search Architecture",
+        "question": "What is the concrete difference between Google Maps Pack Local and traditional SEO?",
+        "answer": "Google Maps Local Pack targets high-intent nearby queries ('near me', in targeted Paris districts or regional hubs) placed prominently above organic web results with direct call and navigation taps. Traditional organic SEO ranks deep web pages for broader informational research. Net Sure Consulting blends domain authority and NAP citation signals to lock your business in the Top 3 map positions, capturing high-converting local calls and client footfall."
+      },
+      {
+        "id": "faq-7",
+        "category": "web",
+        "badge": "Cyber & GDPR Compliance",
+        "question": "How do you enforce Core Web Vitals performance and strict European GDPR compliance?",
+        "answer": "Every web solution engineered by Net Sure Consulting undergoes rigorous speed optimization (aiming for 90+ Google Mobile scores), TLS encryption, strict HSTS/CSP security headers, and total regulatory compliance: zero unauthorized trackers, valid CNIL cookie preferences, and hosted on secure European cloud nodes."
       }
     ]
   },

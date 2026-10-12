@@ -23,7 +23,7 @@ export const CareersFrame: React.FC<CareersFrameProps> = ({ onOpenJobModal }) =>
       <div className="relative max-w-7xl mx-auto space-y-16 z-10">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-neutral-200 dark:border-neutral-800 pb-4 text-xs font-mono tracking-wider text-neutral-500 dark:text-neutral-400">
-          <span className="text-xs font-mono uppercase text-[#144A32] dark:text-[#22C55E] tracking-widest font-bold">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono uppercase text-amber-500 dark:text-amber-400 tracking-widest font-bold bg-amber-500/10 border border-amber-400/30 shadow-xs">
             {t('careers.frameTitle')}
           </span>
           <span className="hidden sm:inline">Paris & Île-de-France (Hybride)</span>
@@ -39,11 +39,11 @@ export const CareersFrame: React.FC<CareersFrameProps> = ({ onOpenJobModal }) =>
           </p>
         </div>
 
-        {/* Job Card */}
-        <div className="hover-gold p-8 sm:p-12 border border-neutral-300 dark:border-neutral-800 bg-white dark:bg-[#090A0B] space-y-8 shadow-sm transition-all">
+        {/* Job Card with Rounded 3xl Curves and Noir & Or Styling */}
+        <div className="card-luxury p-8 sm:p-12 rounded-3xl border border-amber-500/25 dark:border-amber-400/25 bg-white/95 dark:bg-[#0D0F13]/95 space-y-8 shadow-xl transition-all">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-neutral-200 dark:border-neutral-800">
             <div>
-              <div className="flex items-center gap-2 text-xs font-mono text-[#144A32] dark:text-[#22C55E] mb-1.5 font-bold">
+              <div className="flex items-center gap-2 text-xs font-mono text-amber-500 dark:text-amber-400 mb-1.5 font-bold">
                 <Briefcase className="w-4 h-4" />
                 <span>{t('careers.jobDept')}</span>
               </div>
@@ -53,7 +53,7 @@ export const CareersFrame: React.FC<CareersFrameProps> = ({ onOpenJobModal }) =>
             </div>
 
             <div>
-              <span className="px-3.5 py-1.5 text-xs font-mono font-medium border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900 inline-block">
+              <span className="px-4 py-1.5 text-xs font-mono font-bold border border-amber-400/40 bg-amber-500/10 text-amber-500 dark:text-amber-300 rounded-full inline-block shadow-xs">
                 {t('careers.jobType')}
               </span>
             </div>
@@ -61,7 +61,7 @@ export const CareersFrame: React.FC<CareersFrameProps> = ({ onOpenJobModal }) =>
 
           {/* Mission */}
           <div className="space-y-3">
-            <span className="text-xs font-mono uppercase text-[#144A32] dark:text-[#22C55E] font-bold block">
+            <span className="text-xs font-mono uppercase text-amber-500 dark:text-amber-400 font-bold block">
               {t('careers.missionTitle')}
             </span>
             <p className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed font-sans max-w-4xl">
@@ -77,7 +77,9 @@ export const CareersFrame: React.FC<CareersFrameProps> = ({ onOpenJobModal }) =>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-neutral-700 dark:text-neutral-300">
               {skills.map((skill, sIdx) => (
                 <div key={sIdx} className="flex items-start gap-2.5">
-                  <Check className="w-4 h-4 text-[#144A32] dark:text-[#22C55E] shrink-0 mt-0.5" />
+                  <div className="w-5 h-5 rounded-full flex items-center justify-center bg-amber-500/15 text-amber-500 shrink-0 mt-0.5">
+                    <Check className="w-3.5 h-3.5" />
+                  </div>
                   <span className="leading-snug">{skill}</span>
                 </div>
               ))}
@@ -88,7 +90,7 @@ export const CareersFrame: React.FC<CareersFrameProps> = ({ onOpenJobModal }) =>
           <div className="pt-6 border-t border-neutral-200 dark:border-neutral-800 flex justify-end">
             <button
               onClick={onOpenJobModal}
-              className="px-8 py-4 text-xs sm:text-sm font-semibold bg-[#144A32] hover:bg-[#0E3624] dark:bg-[#22C55E] dark:hover:bg-[#16A34A] text-white dark:text-neutral-950 flex items-center gap-2.5 transition-all shadow hover:shadow-md"
+              className="btn-gold px-8 py-4 text-xs sm:text-sm font-bold flex items-center gap-2.5 transition-all shadow-[0_4px_20px_rgba(212,175,55,0.35)] cursor-pointer"
             >
               <span>{t('careers.ctaApply')}</span>
               <ArrowRight className="w-4 h-4" />

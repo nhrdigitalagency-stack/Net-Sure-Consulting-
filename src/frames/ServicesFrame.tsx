@@ -60,7 +60,7 @@ export const ServicesFrame: React.FC<ServicesFrameProps> = ({ onNavigateToFrame 
       <div className="relative max-w-7xl mx-auto space-y-16 z-10">
         {/* Editorial Subtitle */}
         <div className="flex items-center justify-between border-b border-neutral-200 dark:border-neutral-800 pb-4 text-xs font-mono tracking-wider text-neutral-500 dark:text-neutral-400">
-          <span className="text-xs font-mono uppercase text-[#144A32] dark:text-[#22C55E] tracking-widest font-bold">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono uppercase text-amber-500 dark:text-amber-400 tracking-widest font-bold bg-amber-500/10 border border-amber-400/30 shadow-xs">
             {t('services.frameTitle')}
           </span>
           <span className="hidden sm:inline">Expertises Intégrées</span>
@@ -76,7 +76,7 @@ export const ServicesFrame: React.FC<ServicesFrameProps> = ({ onNavigateToFrame 
           </p>
         </div>
 
-        {/* 4 Cards Grid */}
+        {/* 4 Cards Grid with Rounded Corners and Noir & Or Theme */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((srv) => {
             const IconComp = srv.icon;
@@ -84,25 +84,27 @@ export const ServicesFrame: React.FC<ServicesFrameProps> = ({ onNavigateToFrame 
               <div
                 key={srv.num}
                 onClick={() => onNavigateToFrame(srv.targetFrame)}
-                className={`hover-gold group p-8 sm:p-10 border transition-all cursor-pointer flex flex-col justify-between hover:shadow-xl ${
+                className={`card-luxury group p-8 sm:p-10 rounded-3xl border transition-all cursor-pointer flex flex-col justify-between ${
                   srv.highlight
-                    ? 'border-[#144A32] dark:border-[#22C55E] bg-[#144A32]/4 dark:bg-[#22C55E]/5 ring-1 ring-[#144A32]/20 dark:ring-[#22C55E]/20'
-                    : 'border-neutral-200 dark:border-neutral-800 bg-white/90 dark:bg-neutral-900/40 backdrop-blur-xs'
+                    ? 'border-amber-400/60 dark:border-amber-400/60 bg-gradient-to-b from-amber-500/10 via-white to-white dark:from-amber-400/10 dark:via-[#0D0F13] dark:to-[#0D0F13] shadow-[0_4px_30px_rgba(212,175,55,0.18)]'
+                    : 'border-amber-500/20 dark:border-amber-400/20 bg-white/95 dark:bg-[#0D0F13]/95'
                 }`}
               >
                 <div className="space-y-5">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <span className="font-mono text-sm font-bold text-[#144A32] dark:text-[#22C55E]">
+                      <span className="font-mono text-xs font-extrabold px-3 py-1 rounded-full bg-amber-500/15 border border-amber-400/35 text-amber-500 dark:text-amber-300">
                         {srv.num}
                       </span>
-                      <IconComp className="w-5 h-5 text-neutral-400 group-hover:text-[#144A32] dark:group-hover:text-[#22C55E] transition-colors" />
+                      <div className="w-10 h-10 rounded-full flex items-center justify-center bg-amber-500/10 border border-amber-400/20">
+                        <IconComp className="w-5 h-5 text-amber-500 dark:text-amber-400 group-hover:scale-110 transition-transform" />
+                      </div>
                     </div>
-                    <span className="p-2 border border-neutral-200 dark:border-neutral-800 text-neutral-400 group-hover:text-neutral-950 dark:group-hover:text-white group-hover:border-neutral-400 transition-colors">
+                    <span className="w-9 h-9 rounded-full border border-neutral-300 dark:border-neutral-700 flex items-center justify-center text-neutral-400 group-hover:text-amber-400 group-hover:border-amber-400 group-hover:bg-amber-400/10 transition-all">
                       <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </span>
                   </div>
-                  <h3 className="font-display font-bold text-2xl text-neutral-950 dark:text-white">
+                  <h3 className="font-display font-bold text-2xl text-neutral-950 dark:text-white group-hover:text-amber-500 dark:group-hover:text-amber-300 transition-colors">
                     {srv.title}
                   </h3>
                   <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed font-sans">
@@ -110,9 +112,9 @@ export const ServicesFrame: React.FC<ServicesFrameProps> = ({ onNavigateToFrame 
                   </p>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-neutral-200 dark:border-neutral-800 flex items-center justify-between text-xs font-mono text-neutral-500 dark:text-neutral-400">
+                <div className="pt-6 mt-6 border-t border-neutral-200 dark:border-neutral-800/80 flex items-center justify-between text-xs font-mono text-neutral-500 dark:text-neutral-400">
                   <span>{srv.sublabel}</span>
-                  <span className="group-hover:underline text-neutral-900 dark:text-neutral-100 font-semibold">
+                  <span className="group-hover:text-amber-400 text-neutral-900 dark:text-neutral-100 font-semibold transition-colors flex items-center gap-1">
                     Accéder au volet complet →
                   </span>
                 </div>

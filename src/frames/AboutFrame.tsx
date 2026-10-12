@@ -37,7 +37,7 @@ export const AboutFrame: React.FC<AboutFrameProps> = ({ onNavigateToContact }) =
       <div className="relative max-w-7xl mx-auto space-y-16 z-10">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-neutral-200 dark:border-neutral-800 pb-4 text-xs font-mono tracking-wider text-neutral-500 dark:text-neutral-400">
-          <span className="text-xs font-mono uppercase text-[#144A32] dark:text-[#22C55E] tracking-widest font-bold">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono uppercase text-amber-500 dark:text-amber-400 tracking-widest font-bold bg-amber-500/10 border border-amber-400/30 shadow-xs">
             {t('about.frameTitle')}
           </span>
           <span className="hidden sm:inline">Groupe NET SURE depuis 2014</span>
@@ -53,15 +53,15 @@ export const AboutFrame: React.FC<AboutFrameProps> = ({ onNavigateToContact }) =
               {t('about.story')}
             </p>
 
-            <div className="p-6 border border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/30 space-y-3 shadow-2xs">
-              <span className="text-xs font-mono uppercase text-[#144A32] dark:text-[#22C55E] block font-bold">
+            <div className="card-luxury p-6 rounded-3xl border border-amber-500/20 dark:border-amber-400/20 bg-neutral-50/80 dark:bg-[#0D0F13]/80 space-y-3 shadow-xs">
+              <span className="text-xs font-mono uppercase text-amber-500 dark:text-amber-400 block font-bold">
                 {t('about.valuesTitle')}
               </span>
-              <div className="flex flex-wrap gap-2.5 text-xs font-medium text-neutral-800 dark:text-neutral-200">
+              <div className="flex flex-wrap gap-2 text-xs font-medium text-neutral-800 dark:text-neutral-200">
                 {values.map((val, idx) => (
                   <span
                     key={idx}
-                    className="after:content-['·'] after:ml-2.5 last:after:content-none text-neutral-700 dark:text-neutral-300"
+                    className="px-3 py-1 rounded-full bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 font-sans"
                   >
                     {val}
                   </span>
@@ -72,14 +72,14 @@ export const AboutFrame: React.FC<AboutFrameProps> = ({ onNavigateToContact }) =
 
           <div className="lg:col-span-7 space-y-8">
             <div>
-              <span className="text-xs font-mono uppercase text-[#144A32] dark:text-[#22C55E] font-bold block mb-4">
+              <span className="text-xs font-mono uppercase text-amber-500 dark:text-amber-400 font-bold block mb-4">
                 {t('about.forcesTitle')}
               </span>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {forces.map((force, fIdx) => (
                   <div
                     key={fIdx}
-                    className="hover-gold p-5 border border-neutral-200 dark:border-neutral-800 text-xs sm:text-sm bg-neutral-50/40 dark:bg-neutral-900/20 space-y-1.5 shadow-2xs transition-all"
+                    className="card-luxury p-5 rounded-2xl border border-amber-500/20 dark:border-amber-400/20 text-xs sm:text-sm bg-white/95 dark:bg-[#0D0F13]/95 space-y-1.5 shadow-xs transition-all"
                   >
                     <strong className="block text-neutral-950 dark:text-white font-semibold">
                       {force.title}
@@ -99,7 +99,7 @@ export const AboutFrame: React.FC<AboutFrameProps> = ({ onNavigateToContact }) =
               <div className="space-y-2.5">
                 {knowhow.map((kh, kIdx) => (
                   <div key={kIdx} className="flex items-center gap-3 text-xs sm:text-sm text-neutral-700 dark:text-neutral-300">
-                    <CheckCircle2 className="w-4 h-4 text-[#144A32] dark:text-[#22C55E] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-amber-500 dark:text-amber-400 shrink-0" />
                     <span>{kh}</span>
                   </div>
                 ))}
@@ -111,7 +111,7 @@ export const AboutFrame: React.FC<AboutFrameProps> = ({ onNavigateToContact }) =
         {/* Interactive FAQ Accordion Component */}
         <FaqAccordion />
 
-        {/* Partners Strip */}
+        {/* Partners Strip with Rounded Pills */}
         <div className="pt-8 border-t border-neutral-200 dark:border-neutral-800 space-y-4">
           <span className="text-xs font-mono text-neutral-400 uppercase tracking-wider block">
             {t('about.partnersTitle')}
@@ -120,7 +120,7 @@ export const AboutFrame: React.FC<AboutFrameProps> = ({ onNavigateToContact }) =
             {partners.map((pName, pIdx) => (
               <div
                 key={pIdx}
-                className="hover-gold px-3 py-3 border border-neutral-200 dark:border-neutral-800 text-center font-mono text-[11px] text-neutral-600 dark:text-neutral-400 bg-neutral-50/50 dark:bg-neutral-900/30 font-medium transition-all"
+                className="hover-gold px-3 py-2.5 rounded-xl border border-neutral-200 dark:border-neutral-800 text-center font-mono text-[11px] text-neutral-600 dark:text-neutral-400 bg-neutral-50/70 dark:bg-neutral-900/40 font-medium transition-all"
               >
                 {pName}
               </div>

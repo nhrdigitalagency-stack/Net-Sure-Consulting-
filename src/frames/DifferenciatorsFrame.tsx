@@ -50,7 +50,7 @@ export const DifferenciatorsFrame: React.FC<DifferenciatorsFrameProps> = ({
       <div className="relative max-w-7xl mx-auto space-y-16 z-10">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-neutral-200 dark:border-neutral-800 pb-4 text-xs font-mono tracking-wider text-neutral-500 dark:text-neutral-400">
-          <span className="text-xs font-mono uppercase text-[#144A32] dark:text-[#22C55E] tracking-widest font-bold">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono uppercase text-amber-500 dark:text-amber-400 tracking-widest font-bold bg-amber-500/10 border border-amber-400/30 shadow-xs">
             {t('differenciators.frameTitle')}
           </span>
           <span className="hidden sm:inline">Engagements Contractuels</span>
@@ -73,34 +73,34 @@ export const DifferenciatorsFrame: React.FC<DifferenciatorsFrameProps> = ({
             return (
               <div
                 key={item.num}
-                className={`hover-gold p-8 sm:p-10 border transition-all shadow-xs hover:shadow-xl ${
+                className={`card-luxury p-8 sm:p-10 rounded-3xl border transition-all ${
                   isFeatured
-                    ? 'lg:col-span-2 bg-gradient-to-br from-[#144A32] via-[#0E3624] to-[#0A2619] text-white border-[#144A32] dark:border-[#22C55E]/40 relative overflow-hidden'
-                    : 'border-neutral-200 dark:border-neutral-800 space-y-4 bg-white dark:bg-[#090A0B] text-neutral-900 dark:text-neutral-50'
+                    ? 'lg:col-span-2 bg-gradient-to-br from-[#1C1811] via-[#0E1014] to-[#07080A] text-white border-amber-400/80 shadow-[0_8px_35px_rgba(212,175,55,0.2)] relative overflow-hidden'
+                    : 'border-amber-500/20 dark:border-amber-400/20 space-y-4 bg-white/95 dark:bg-[#0D0F13]/95 text-neutral-900 dark:text-neutral-50'
                 }`}
               >
                 {isFeatured && (
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-400/10 rounded-full blur-3xl pointer-events-none" />
+                  <div className="absolute top-0 right-0 w-80 h-80 bg-amber-500/15 rounded-full blur-3xl pointer-events-none" />
                 )}
                 <div
                   className={`flex items-center justify-between pb-3 border-b ${
                     isFeatured
-                      ? 'border-white/15'
+                      ? 'border-amber-400/20'
                       : 'border-neutral-100 dark:border-neutral-900'
                   }`}
                 >
                   <span
                     className={`font-mono text-sm font-bold ${
-                      isFeatured ? 'text-emerald-300' : 'text-[#144A32] dark:text-[#22C55E]'
+                      isFeatured ? 'text-amber-400' : 'text-amber-500 dark:text-amber-400'
                     }`}
                   >
                     [{item.num}]
                   </span>
                   <span
-                    className={`text-[11px] font-mono uppercase px-2 py-0.5 ${
+                    className={`text-[11px] font-mono uppercase px-3 py-1 rounded-full ${
                       isFeatured
-                        ? 'bg-white/15 text-emerald-200 font-semibold'
-                        : 'text-neutral-400'
+                        ? 'bg-amber-400/20 text-amber-300 border border-amber-400/40 font-bold shadow-xs'
+                        : 'bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 border border-neutral-200 dark:border-neutral-700'
                     }`}
                   >
                     {isFeatured ? 'Garantie Contractuelle NSC' : 'Engagement Contractuel'}
@@ -115,7 +115,7 @@ export const DifferenciatorsFrame: React.FC<DifferenciatorsFrameProps> = ({
                 </h3>
                 <p
                   className={`text-sm sm:text-base leading-relaxed font-sans mt-3 ${
-                    isFeatured ? 'text-emerald-100/90' : 'text-neutral-600 dark:text-neutral-400'
+                    isFeatured ? 'text-neutral-300' : 'text-neutral-600 dark:text-neutral-400'
                   }`}
                 >
                   {item.desc}
@@ -129,9 +129,10 @@ export const DifferenciatorsFrame: React.FC<DifferenciatorsFrameProps> = ({
         <div className="pt-4 flex justify-end">
           <button
             onClick={onNavigateToPricing}
-            className="text-xs font-mono uppercase tracking-wider text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white underline underline-offset-4"
+            className="px-5 py-2.5 rounded-full btn-noir text-xs font-mono uppercase tracking-wider text-amber-400 border-amber-400/40 hover:border-amber-400 cursor-pointer shadow-xs flex items-center gap-2"
           >
-            Consulter notre grille tarifaire transparente →
+            <span>Consulter notre grille tarifaire transparente</span>
+            <span>→</span>
           </button>
         </div>
       </div>

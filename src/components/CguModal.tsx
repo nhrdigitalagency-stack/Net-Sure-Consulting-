@@ -15,13 +15,14 @@ export const CguModal: React.FC<CguModalProps> = ({ isOpen, onClose }) => {
     <div
       role="dialog"
       aria-modal="true"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-md animate-in fade-in duration-200"
     >
-      <div className="relative w-full max-w-3xl bg-white dark:bg-[#111315] border border-neutral-300 dark:border-neutral-800 p-6 sm:p-10 shadow-2xl text-neutral-900 dark:text-neutral-100 max-h-[88vh] overflow-y-auto">
+      <div className="card-luxury relative w-full max-w-3xl bg-white/95 dark:bg-[#0D0F13]/95 border border-amber-500/30 dark:border-amber-400/30 rounded-3xl p-6 sm:p-10 shadow-2xl text-neutral-900 dark:text-neutral-100 max-h-[88vh] overflow-y-auto">
         <div className="flex items-start justify-between pb-5 border-b border-neutral-200 dark:border-neutral-800">
           <div>
-            <div className="text-xs uppercase font-mono tracking-wider text-[#144A32] dark:text-[#22C55E]">
-              Mentions Légales & Conditions Contractuelles
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono uppercase text-amber-500 dark:text-amber-400 bg-amber-500/10 border border-amber-400/30 font-bold mb-1">
+              <ShieldCheck className="w-3.5 h-3.5" />
+              <span>Mentions Légales & Conditions Contractuelles</span>
             </div>
             <h2 className="text-xl sm:text-2xl font-display font-bold mt-1">
               {language === 'fr'
@@ -34,7 +35,7 @@ export const CguModal: React.FC<CguModalProps> = ({ isOpen, onClose }) => {
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 border border-neutral-200 dark:border-neutral-700 text-neutral-500 hover:text-neutral-900 dark:hover:text-white"
+            className="w-9 h-9 rounded-full flex items-center justify-center border border-neutral-200 dark:border-neutral-700 text-neutral-500 hover:text-amber-400 hover:border-amber-400 transition-colors cursor-pointer"
             aria-label="Fermer"
           >
             <X className="w-5 h-5" />

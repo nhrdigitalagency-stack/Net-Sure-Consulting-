@@ -24,7 +24,7 @@ export const ConsultingFrame: React.FC<ConsultingFrameProps> = ({ onNavigateToCo
       <div className="relative max-w-7xl mx-auto space-y-16 z-10">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-neutral-200 dark:border-neutral-800 pb-4 text-xs font-mono tracking-wider text-neutral-500 dark:text-neutral-400">
-          <span className="text-xs font-mono uppercase text-[#144A32] dark:text-[#22C55E] tracking-widest font-bold">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono uppercase text-amber-500 dark:text-amber-400 tracking-widest font-bold bg-amber-500/10 border border-amber-400/30 shadow-xs">
             {t('consulting.frameTitle')}
           </span>
           <span className="hidden sm:inline font-medium">Pôle Conseil & Conduite du Changement</span>
@@ -47,10 +47,10 @@ export const ConsultingFrame: React.FC<ConsultingFrameProps> = ({ onNavigateToCo
         {/* Insurance Sector Breakdown */}
         <div className="space-y-6 pt-4">
           <div>
-            <span className="text-xs font-mono uppercase tracking-wider text-[#144A32] dark:text-[#22C55E] font-bold">
+            <span className="text-xs font-mono uppercase tracking-wider text-amber-500 dark:text-amber-400 font-bold px-3 py-1 rounded-full bg-amber-500/10 border border-amber-400/30 inline-block">
               {t('consulting.sectorTitle')}
             </span>
-            <p className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 mt-1">
+            <p className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 mt-2">
               {t('consulting.sectorDesc')}
             </p>
           </div>
@@ -61,10 +61,12 @@ export const ConsultingFrame: React.FC<ConsultingFrameProps> = ({ onNavigateToCo
               return (
                 <div
                   key={sec.name}
-                  className="hover-gold p-6 border border-neutral-200 dark:border-neutral-800 space-y-3 bg-white/90 dark:bg-[#090A0B]/90 backdrop-blur-xs transition-all shadow-xs group"
+                  className="card-luxury p-6 rounded-3xl border border-amber-500/20 dark:border-amber-400/20 space-y-3 bg-white/95 dark:bg-[#0D0F13]/95 backdrop-blur-xs transition-all shadow-xs group"
                 >
-                  <IconComponent className="w-5 h-5 text-[#144A32] dark:text-[#22C55E] group-hover:text-amber-500 transition-colors" />
-                  <h3 className="font-display font-bold text-lg text-neutral-950 dark:text-white leading-snug pb-1">
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center bg-amber-500/10 border border-amber-400/20">
+                    <IconComponent className="w-5 h-5 text-amber-500 dark:text-amber-400 group-hover:scale-110 transition-transform" />
+                  </div>
+                  <h3 className="font-display font-bold text-lg text-neutral-950 dark:text-white leading-snug pb-1 group-hover:text-amber-500 dark:group-hover:text-amber-300 transition-colors">
                     {sec.name}
                   </h3>
                   <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed font-sans">
@@ -77,18 +79,18 @@ export const ConsultingFrame: React.FC<ConsultingFrameProps> = ({ onNavigateToCo
         </div>
 
         {/* Prestigious Deliverables Banner */}
-        <div className="hover-gold p-8 sm:p-10 bg-[#144A32] dark:bg-[#0E2E20] border border-[#0E3624] dark:border-[#22C55E]/30 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-6 shadow-xl transition-all">
+        <div className="card-luxury p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-[#18150E] via-[#0E1015] to-[#07080A] border border-amber-400/50 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-6 shadow-[0_8px_35px_rgba(212,175,55,0.18)] transition-all">
           <div className="space-y-1 max-w-2xl">
-            <span className="text-[11px] font-mono uppercase tracking-widest text-amber-300 dark:text-amber-400 block font-bold">
+            <span className="text-[11px] font-mono uppercase tracking-widest text-amber-400 block font-bold">
               Garantie Méthodologique & Documentation
             </span>
-            <div className="text-sm sm:text-base font-sans font-medium text-emerald-50 leading-relaxed">
+            <div className="text-sm sm:text-base font-sans font-medium text-neutral-200 leading-relaxed">
               {t('consulting.deliverables')}
             </div>
           </div>
           <button
             onClick={onNavigateToContact}
-            className="px-7 py-3.5 text-xs font-semibold bg-white text-neutral-950 hover:bg-neutral-100 dark:bg-[#22C55E] dark:text-neutral-950 dark:hover:bg-[#16A34A] shrink-0 self-start sm:self-auto flex items-center gap-2 transition-all shadow hover:shadow-md hover:scale-[1.02]"
+            className="btn-gold px-7 py-3.5 text-xs font-bold shrink-0 self-start sm:self-auto flex items-center gap-2 transition-all shadow-[0_4px_15px_rgba(212,175,55,0.35)] cursor-pointer"
           >
             <span>Consulter nos experts</span>
             <ArrowRight className="w-4 h-4" />

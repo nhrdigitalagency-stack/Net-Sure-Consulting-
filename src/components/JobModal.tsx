@@ -33,12 +33,12 @@ export const JobModal: React.FC<JobModalProps> = ({ isOpen, onClose }) => {
     <div
       role="dialog"
       aria-modal="true"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-md animate-in fade-in duration-200"
     >
-      <div className="relative w-full max-w-xl bg-white dark:bg-[#111315] border border-neutral-300 dark:border-neutral-800 p-6 sm:p-8 shadow-2xl text-neutral-900 dark:text-neutral-100 max-h-[90vh] overflow-y-auto">
+      <div className="card-luxury relative w-full max-w-xl bg-white/95 dark:bg-[#0D0F13]/95 border border-amber-500/30 dark:border-amber-400/30 rounded-3xl p-6 sm:p-8 shadow-2xl text-neutral-900 dark:text-neutral-100 max-h-[90vh] overflow-y-auto">
         <div className="flex items-start justify-between pb-4 border-b border-neutral-200 dark:border-neutral-800">
           <div>
-            <div className="flex items-center gap-2 text-xs font-mono uppercase text-[#144A32] dark:text-[#22C55E]">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono uppercase text-amber-500 dark:text-amber-400 bg-amber-500/10 border border-amber-400/30 font-bold mb-1">
               <Briefcase className="w-3.5 h-3.5" />
               <span>Candidature Directe · Paris 18e</span>
             </div>
@@ -48,7 +48,7 @@ export const JobModal: React.FC<JobModalProps> = ({ isOpen, onClose }) => {
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 border border-neutral-200 dark:border-neutral-700 text-neutral-500 hover:text-neutral-900 dark:hover:text-white"
+            className="w-9 h-9 rounded-full flex items-center justify-center border border-neutral-200 dark:border-neutral-700 text-neutral-500 hover:text-amber-400 hover:border-amber-400 transition-colors cursor-pointer"
             aria-label="Fermer"
           >
             <X className="w-5 h-5" />
@@ -67,7 +67,7 @@ export const JobModal: React.FC<JobModalProps> = ({ isOpen, onClose }) => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="ex. Sophie Delorme"
-                className="w-full px-3 py-2 border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-[#090A0B] focus:border-[#144A32] dark:focus:border-[#22C55E] outline-none"
+                className="w-full px-4 py-2.5 rounded-xl border border-neutral-300 dark:border-neutral-700/80 bg-white dark:bg-[#060709] focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition-all"
               />
             </div>
 
@@ -82,7 +82,7 @@ export const JobModal: React.FC<JobModalProps> = ({ isOpen, onClose }) => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="sophie@example.com"
-                  className="w-full px-3 py-2 border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-[#090A0B] focus:border-[#144A32] dark:focus:border-[#22C55E] outline-none"
+                  className="w-full px-4 py-2.5 rounded-xl border border-neutral-300 dark:border-neutral-700/80 bg-white dark:bg-[#060709] focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition-all"
                 />
               </div>
               <div>
@@ -94,7 +94,7 @@ export const JobModal: React.FC<JobModalProps> = ({ isOpen, onClose }) => {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="06 00 00 00 00"
-                  className="w-full px-3 py-2 border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-[#090A0B] focus:border-[#144A32] dark:focus:border-[#22C55E] outline-none"
+                  className="w-full px-4 py-2.5 rounded-xl border border-neutral-300 dark:border-neutral-700/80 bg-white dark:bg-[#060709] focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition-all"
                 />
               </div>
             </div>
@@ -108,7 +108,7 @@ export const JobModal: React.FC<JobModalProps> = ({ isOpen, onClose }) => {
                 value={linkedin}
                 onChange={(e) => setLinkedin(e.target.value)}
                 placeholder="https://linkedin.com/in/votre-profil"
-                className="w-full px-3 py-2 border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-[#090A0B] focus:border-[#144A32] dark:focus:border-[#22C55E] outline-none"
+                className="w-full px-4 py-2.5 rounded-xl border border-neutral-300 dark:border-neutral-700/80 bg-white dark:bg-[#060709] focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition-all"
               />
             </div>
 
@@ -122,7 +122,7 @@ export const JobModal: React.FC<JobModalProps> = ({ isOpen, onClose }) => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Précisez vos réalisations en virements SEPA (SCT), rédaction de spécifications, COBOL/SQL ou tests de recette..."
-                className="w-full px-3 py-2 border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-[#090A0B] focus:border-[#144A32] dark:focus:border-[#22C55E] outline-none resize-none"
+                className="w-full px-4 py-2.5 rounded-xl border border-neutral-300 dark:border-neutral-700/80 bg-white dark:bg-[#060709] focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none resize-none transition-all"
               />
             </div>
 
@@ -134,13 +134,13 @@ export const JobModal: React.FC<JobModalProps> = ({ isOpen, onClose }) => {
               <button
                 type="button"
                 onClick={onClose}
-                className="px-4 py-2 border border-neutral-300 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 hover:border-neutral-400"
+                className="px-5 py-2.5 rounded-full border border-neutral-300 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 hover:border-amber-400 cursor-pointer"
               >
                 Annuler
               </button>
               <button
                 type="submit"
-                className="px-5 py-2 font-semibold bg-[#144A32] dark:bg-[#22C55E] text-white dark:text-neutral-950 flex items-center gap-1.5"
+                className="btn-gold px-6 py-2.5 rounded-full font-bold flex items-center gap-1.5 cursor-pointer shadow-md"
               >
                 <span>Transmettre ma candidature</span>
                 <Send className="w-3.5 h-3.5" />
@@ -149,7 +149,7 @@ export const JobModal: React.FC<JobModalProps> = ({ isOpen, onClose }) => {
           </form>
         ) : (
           <div className="pt-8 pb-4 text-center space-y-4">
-            <CheckCircle2 className="w-12 h-12 text-[#144A32] dark:text-[#22C55E] mx-auto" />
+            <CheckCircle2 className="w-12 h-12 text-amber-500 dark:text-amber-400 mx-auto" />
             <h3 className="text-lg font-display font-bold">Candidature Préparée</h3>
             <p className="text-xs text-neutral-600 dark:text-neutral-400 max-w-md mx-auto">
               Votre dossier a été préparé pour le pôle recrutement de Net Sure Consulting.
@@ -157,7 +157,7 @@ export const JobModal: React.FC<JobModalProps> = ({ isOpen, onClose }) => {
             </p>
             <button
               onClick={onClose}
-              className="mt-4 px-6 py-2 text-xs font-semibold bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900"
+              className="btn-gold mt-4 px-7 py-2.5 text-xs font-bold rounded-full cursor-pointer shadow-md"
             >
               Fermer
             </button>

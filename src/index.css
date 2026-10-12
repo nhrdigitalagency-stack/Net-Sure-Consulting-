@@ -6,31 +6,37 @@
   :root {
     --font-display: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --accent-forest: #144A32;
-    --accent-forest-hover: #0E3624;
-    --bg-page: #FFFFFF;
-    --bg-card: #F9FAFB;
-    --border-line: #E5E7EB;
+    --accent-gold: #D4AF37;
+    --accent-gold-light: #F3C64F;
+    --accent-gold-dark: #B8860B;
+    --accent-forest: #D4AF37;
+    --accent-forest-hover: #B8860B;
+    --bg-page: #FAF9F6;
+    --bg-card: #FFFFFF;
+    --border-line: #E8E5DF;
   }
 
   :root.dark, .dark, [data-theme="dark"] {
-    --accent-forest: #22C55E;
-    --accent-forest-hover: #16A34A;
-    --bg-page: #090A0B;
-    --bg-card: #121417;
-    --border-line: #20242C;
+    --accent-gold: #D4AF37;
+    --accent-gold-light: #F3C64F;
+    --accent-gold-dark: #B8860B;
+    --accent-forest: #D4AF37;
+    --accent-forest-hover: #F3C64F;
+    --bg-page: #060709;
+    --bg-card: #0D0E12;
+    --border-line: #1F232B;
   }
 
   html {
     font-family: var(--font-body);
     scroll-behavior: smooth;
-    background-color: #FFFFFF;
-    color: #111827;
+    background-color: #FAF9F6;
+    color: #0A0A0A;
   }
 
   html.dark, :root[data-theme="dark"] {
-    background-color: #090A0B;
-    color: #F9FAFB;
+    background-color: #060709;
+    color: #F8F9FA;
   }
 
   body {
@@ -147,9 +153,63 @@
 
 .dark .gold-gradient-text,
 [data-theme="dark"] .gold-gradient-text {
-  background: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #F59E0B 100%);
+  background: linear-gradient(135deg, #FFF4CC 0%, #F3C64F 40%, #D4AF37 70%, #AA771C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Luxury Card with Rounded Corners and Gold Accents */
+.card-luxury {
+  border-radius: 1.5rem;
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(250, 250, 248, 0.9) 100%);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dark .card-luxury,
+[data-theme="dark"] .card-luxury {
+  background: linear-gradient(145deg, rgba(16, 18, 22, 0.95) 0%, rgba(9, 10, 13, 0.95) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.6);
+}
+
+.card-luxury:hover {
+  border-color: rgba(212, 175, 55, 0.65);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.25), 0 15px 35px -10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+/* Gold Gradient Button */
+.btn-gold {
+  background: linear-gradient(135deg, #D4AF37 0%, #F3C64F 50%, #C5A059 100%);
+  color: #090A0C;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #E5C378 0%, #FCD34D 50%, #D4AF37 100%);
+  box-shadow: 0 6px 25px rgba(212, 175, 55, 0.55);
+  transform: translateY(-1px);
+}
+
+/* Noir Button with Gold Trim */
+.btn-noir {
+  background: rgba(10, 11, 14, 0.9);
+  color: #F8F9FA;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.btn-noir:hover {
+  border-color: #D4AF37;
+  color: #F3C64F;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  transform: translateY(-1px);
 }
 
 /* Background overlays & architectural textures */

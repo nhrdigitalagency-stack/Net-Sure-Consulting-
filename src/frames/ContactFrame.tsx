@@ -95,7 +95,7 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
       <div className="relative max-w-7xl mx-auto space-y-16 z-10">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-neutral-200 dark:border-neutral-800 pb-4 text-xs font-mono tracking-wider text-neutral-500 dark:text-neutral-400">
-          <span className="text-xs font-mono uppercase text-[#144A32] dark:text-[#22C55E] tracking-widest font-bold">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono uppercase text-amber-500 dark:text-amber-400 tracking-widest font-bold bg-amber-500/10 border border-amber-400/30 shadow-xs">
             {t('contact.frameTitle')}
           </span>
           <span className="hidden sm:inline">Réponse Garantie sous 24h ouvrées</span>
@@ -116,26 +116,30 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
 
             <div className="space-y-6 pt-4 border-t border-neutral-200 dark:border-neutral-800">
               <div className="flex items-start gap-3.5">
-                <MapPin className="w-5 h-5 text-[#144A32] dark:text-[#22C55E] shrink-0 mt-0.5" />
+                <div className="w-10 h-10 rounded-full flex items-center justify-center bg-amber-500/10 border border-amber-400/20 shrink-0">
+                  <MapPin className="w-5 h-5 text-amber-500 dark:text-amber-400" />
+                </div>
                 <div>
                   <span className="block text-xs font-mono text-neutral-400 uppercase">
                     {t('contact.addressTitle')}
                   </span>
-                  <span className="text-sm sm:text-base font-semibold text-neutral-900 dark:text-white">
+                  <span className="text-sm sm:text-base font-semibold text-neutral-950 dark:text-white">
                     {t('contact.addressVal')}
                   </span>
                 </div>
               </div>
 
               <div className="flex items-start gap-3.5">
-                <Mail className="w-5 h-5 text-[#144A32] dark:text-[#22C55E] shrink-0 mt-0.5" />
+                <div className="w-10 h-10 rounded-full flex items-center justify-center bg-amber-500/10 border border-amber-400/20 shrink-0">
+                  <Mail className="w-5 h-5 text-amber-500 dark:text-amber-400" />
+                </div>
                 <div>
                   <span className="block text-xs font-mono text-neutral-400 uppercase">
                     {t('contact.emailTitle')}
                   </span>
                   <a
                     href="mailto:contact@cnetsure.com"
-                    className="text-sm sm:text-base font-mono font-semibold text-neutral-900 dark:text-white hover:underline"
+                    className="text-sm sm:text-base font-mono font-bold text-amber-600 dark:text-amber-400 hover:underline"
                   >
                     {t('contact.emailVal')}
                   </a>
@@ -143,7 +147,9 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
               </div>
 
               <div className="flex items-start gap-3.5">
-                <Clock className="w-5 h-5 text-[#144A32] dark:text-[#22C55E] shrink-0 mt-0.5" />
+                <div className="w-10 h-10 rounded-full flex items-center justify-center bg-amber-500/10 border border-amber-400/20 shrink-0">
+                  <Clock className="w-5 h-5 text-amber-500 dark:text-amber-400" />
+                </div>
                 <div>
                   <span className="block text-xs font-mono text-neutral-400 uppercase">
                     {t('contact.slaTitle')}
@@ -155,19 +161,19 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
               </div>
             </div>
 
-            <div className="hover-gold p-5 border border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/30 text-xs text-neutral-600 dark:text-neutral-400 space-y-1.5 font-mono transition-all">
+            <div className="card-luxury p-5 rounded-2xl border border-amber-500/20 dark:border-amber-400/20 bg-neutral-50/70 dark:bg-[#0D0F13]/70 text-xs text-neutral-600 dark:text-neutral-400 space-y-1.5 font-mono transition-all">
               <div>SIRET : 944 590 371 · RCS Paris</div>
               <div>Siège social : 40 rue Damrémont, 75018 Paris</div>
               <div>Filiale à 100 % du Groupe NET SURE (création 2014)</div>
             </div>
           </div>
 
-          {/* Right Column: Contact Form */}
+          {/* Right Column: Contact Form with Rounded Luxury Card */}
           <div className="lg:col-span-7">
             {!isSubmitted ? (
               <form
                 onSubmit={handleSubmit}
-                className="hover-gold p-8 sm:p-10 border border-neutral-200 dark:border-neutral-800 bg-neutral-50/30 dark:bg-neutral-900/20 space-y-5 shadow-sm transition-all"
+                className="card-luxury p-8 sm:p-10 rounded-3xl border border-amber-500/30 dark:border-amber-400/30 bg-white/95 dark:bg-[#0D0F13]/95 space-y-5 shadow-xl transition-all"
               >
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
@@ -180,7 +186,7 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder={t('contact.form.namePlaceholder')}
-                      className="w-full px-3.5 py-2.5 text-xs sm:text-sm border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-[#090A0B] focus:border-[#144A32] dark:focus:border-[#22C55E] outline-none"
+                      className="w-full px-4 py-3 text-xs sm:text-sm rounded-xl border border-neutral-300 dark:border-neutral-700/80 bg-white dark:bg-[#060709] focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition-all"
                     />
                   </div>
 
@@ -194,7 +200,7 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder={t('contact.form.emailPlaceholder')}
-                      className="w-full px-3.5 py-2.5 text-xs sm:text-sm border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-[#090A0B] focus:border-[#144A32] dark:focus:border-[#22C55E] outline-none"
+                      className="w-full px-4 py-3 text-xs sm:text-sm rounded-xl border border-neutral-300 dark:border-neutral-700/80 bg-white dark:bg-[#060709] focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition-all"
                     />
                   </div>
                 </div>
@@ -210,7 +216,7 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
                       value={company}
                       onChange={(e) => setCompany(e.target.value)}
                       placeholder={t('contact.form.companyPlaceholder')}
-                      className="w-full px-3.5 py-2.5 text-xs sm:text-sm border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-[#090A0B] focus:border-[#144A32] dark:focus:border-[#22C55E] outline-none"
+                      className="w-full px-4 py-3 text-xs sm:text-sm rounded-xl border border-neutral-300 dark:border-neutral-700/80 bg-white dark:bg-[#060709] focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition-all"
                     />
                   </div>
 
@@ -224,7 +230,7 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
                       value={number}
                       onChange={(e) => setNumber(e.target.value)}
                       placeholder={t('contact.form.numberPlaceholder')}
-                      className="w-full px-3.5 py-2.5 text-xs sm:text-sm border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-[#090A0B] focus:border-[#144A32] dark:focus:border-[#22C55E] outline-none"
+                      className="w-full px-4 py-3 text-xs sm:text-sm rounded-xl border border-neutral-300 dark:border-neutral-700/80 bg-white dark:bg-[#060709] focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition-all"
                     />
                   </div>
                 </div>
@@ -241,7 +247,7 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
                         setRequestVisibilitePremium(true);
                       }
                     }}
-                    className="w-full px-3.5 py-2.5 text-xs sm:text-sm border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-[#090A0B] focus:border-[#144A32] dark:focus:border-[#22C55E] outline-none"
+                    className="w-full px-4 py-3 text-xs sm:text-sm rounded-xl border border-neutral-300 dark:border-neutral-700/80 bg-white dark:bg-[#060709] focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition-all"
                   >
                     <option value="">{t('contact.form.offerSelectPlaceholder')}</option>
                     {offerOptions.map((opt, oIdx) => (
@@ -262,7 +268,7 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder={t('contact.form.messagePlaceholder')}
-                    className="w-full px-3.5 py-2.5 text-xs sm:text-sm border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-[#090A0B] focus:border-[#144A32] dark:focus:border-[#22C55E] outline-none resize-none"
+                    className="w-full px-4 py-3 text-xs sm:text-sm rounded-xl border border-neutral-300 dark:border-neutral-700/80 bg-white dark:bg-[#060709] focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none resize-none transition-all"
                   />
                 </div>
 
@@ -272,7 +278,7 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
                     id="checkbox-devis-fluid"
                     checked={requestVisibilitePremium}
                     onChange={(e) => setRequestVisibilitePremium(e.target.checked)}
-                    className="mt-1 rounded-none border-neutral-400 accent-[#144A32] dark:accent-[#22C55E]"
+                    className="mt-1 rounded-sm border-neutral-400 accent-amber-500 cursor-pointer"
                   />
                   <label
                     htmlFor="checkbox-devis-fluid"
@@ -286,7 +292,7 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full sm:w-auto px-8 py-4 text-xs sm:text-sm font-semibold bg-[#144A32] hover:bg-[#0E3624] dark:bg-[#22C55E] dark:hover:bg-[#16A34A] text-white dark:text-neutral-950 flex items-center justify-center gap-2 transition-all disabled:opacity-50 shadow-md"
+                    className="btn-gold w-full sm:w-auto px-9 py-4 text-xs sm:text-sm font-bold flex items-center justify-center gap-2 transition-all disabled:opacity-50 cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.35)]"
                   >
                     <span>
                       {isSubmitting
@@ -298,8 +304,8 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
                 </div>
               </form>
             ) : (
-              <div className="p-10 border border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/30 text-center space-y-4 shadow-sm">
-                <CheckCircle2 className="w-14 h-14 text-[#144A32] dark:text-[#22C55E] mx-auto" />
+              <div className="card-luxury p-10 rounded-3xl border border-amber-500/30 dark:border-amber-400/30 bg-white/95 dark:bg-[#0D0F13]/95 text-center space-y-4 shadow-xl">
+                <CheckCircle2 className="w-14 h-14 text-amber-500 dark:text-amber-400 mx-auto" />
                 <h3 className="font-display font-bold text-2xl text-neutral-950 dark:text-white">
                   {t('contact.form.successTitle')}
                 </h3>
@@ -312,7 +318,7 @@ export const ContactFrame: React.FC<ContactFrameProps> = ({
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
-                  className="mt-3 px-6 py-2.5 text-xs font-semibold border border-neutral-300 dark:border-neutral-700 hover:border-neutral-950"
+                  className="btn-noir mt-3 px-6 py-2.5 text-xs font-semibold"
                 >
                   Envoyer un autre message
                 </button>

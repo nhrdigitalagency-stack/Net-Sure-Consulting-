@@ -320,31 +320,61 @@
     "partnersTitle": "Partenaires & Écosystème Institutionnel",
     "faqTitle": "Questions Fréquentes (FAQ)",
     "faqSubtitle": "Comprendre notre approche du référencement local, nos méthodes d'ingénierie et nos engagements contractuels.",
+    "faqCategories": {
+      "all": "Toutes les questions",
+      "seo": "SEO & Google Maps",
+      "web": "Création Web & Infra",
+      "commitments": "Garanties & Engagements"
+    },
     "faq": [
       {
         "id": "faq-1",
+        "category": "seo",
+        "badge": "Pack Local Top 3",
         "question": "Comment fonctionne concrètement l'engagement Top 3 Google Maps en 90 jours ?",
         "answer": "Nous commençons par un audit technique exhaustif de votre profil Google Business et de votre zone de chalandise. Nous éliminons les doublons, sécurisons la fiche et harmonisons strictement vos informations NAP (Nom, Adresse, Téléphone) sur l'ensemble des annuaires d'autorité. Nous optimisons les catégories secondaires, paramétrons vos produits et services, et activons un protocole continu d'acquisition d'avis clients réels avec des publications ciblées. Si les objectifs de visibilité ne sont pas atteints au terme des 90 jours, nos équipes prolongent l'accompagnement sans aucun coût additionnel jusqu'à l'obtention du classement visé."
       },
       {
         "id": "faq-2",
+        "category": "commitments",
+        "badge": "Rigueur ESN",
         "question": "Pourquoi tous les échanges s'effectuent-ils exclusivement par email sous 24h ouvrées ?",
         "answer": "Fidèles à la rigueur d'une Entreprise de Services du Numérique (ESN), nous privilégions l'écrit pour garantir une traçabilité intégrale de chaque demande, consigner chaque jalon technique et éviter toute ambiguïté sur les livrables. Notre engagement contractuel est strict : chaque message adressé à contact@cnetsure.com reçoit une réponse approfondie de nos experts sous 24 heures ouvrées."
       },
       {
         "id": "faq-3",
+        "category": "web",
+        "badge": "Double Compétence",
         "question": "En quoi consiste la double compétence Web et Infrastructure de Net Sure Consulting ?",
         "answer": "Contrairement à une agence marketing classique focalisée uniquement sur l'apparence visuelle, Net Sure Consulting est issue du Groupe NET SURE avec un savoir-faire historique en grands systèmes, architectures de données et serveurs d'entreprise. Vos plateformes web ne sont pas de simples vitrines : elles sont conçues pour charger à une vitesse maximale, supporter de forts volumes de trafic et respecter les normes de sécurité informatique les plus exigeantes."
       },
       {
         "id": "faq-4",
+        "category": "commitments",
+        "badge": "Paiement 50/50",
         "question": "Proposez-vous des facilités de paiement ou des acomptes sur vos packs ?",
         "answer": "Oui. Pour accompagner le développement des commerçants, artisans et indépendants sans impacter leur trésorerie, la majorité de nos offres (Pack Visibilité à 399 € HT, Pack SEO Premium à 649 € HT, Création de sites vitrine et e-commerce) prévoient la possibilité d'un acompte de 50 % à la commande, le solde étant réglé lors de la livraison définitive. Le Pack Visibilité Premium (4 200 € HT) bénéficie également d'un échelonnement 50/50 sur la durée du projet."
       },
       {
         "id": "faq-5",
+        "category": "commitments",
+        "badge": "Propriété Totale",
         "question": "Restons-nous propriétaires de nos outils et de nos contenus après la livraison ?",
         "answer": "Absolument. Vous demeurez le propriétaire exclusif de l'intégralité de vos comptes, noms de domaine, fiches Google Maps et bases de données. Dans le cadre de notre alliance de formation avec AGENIUS, nous formons également vos collaborateurs pour vous garantir une parfaite autonomie opérationnelle dans l'actualisation de vos contenus."
+      },
+      {
+        "id": "faq-6",
+        "category": "seo",
+        "badge": "Stratégie SEO Local",
+        "question": "Quelle est la différence entre le référencement Google Maps (Pack Local) et le SEO classique ?",
+        "answer": "Le Pack Local Google Maps cible les recherches d'intention immédiate ('près de chez moi', dans un arrondissement ou une ville ciblée) avec un affichage direct au-dessus des résultats organiques traditionnels, intégrant itinéraire, téléphone et avis en un clic. Le SEO classique positionne des pages web sur des expressions informatives plus larges. Net Sure Consulting combine l'autorité de votre site web et l'optimisation géolocalisée de votre fiche pour verrouiller les 3 premières places du Pack Local et convertir les requêtes mobiles en appels et visites physiques immédiates."
+      },
+      {
+        "id": "faq-7",
+        "category": "web",
+        "badge": "Sécurité & RGPD",
+        "question": "Comment garantissez-vous la vitesse Core Web Vitals et la conformité RGPD de nos sites ?",
+        "answer": "Chaque site créé par Net Sure Consulting fait l'objet d'un audit de performance stricte (visant un score Google PageSpeed de 90+ sur mobile), d'un chiffrement SSL/TLS systématique, d'en-têtes HTTP de sécurité et d'une conformité légale intégrale : gestionnaire de cookies CNIL/RGPD, politique de confidentialité conforme au droit européen et absence de traceurs intrusifs."
       }
     ]
   },

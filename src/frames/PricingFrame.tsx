@@ -64,7 +64,7 @@ export const PricingFrame: React.FC<PricingFrameProps> = ({ onSelectPackage }) =
       <div className="relative max-w-7xl mx-auto space-y-16 z-10">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-neutral-200 dark:border-neutral-800 pb-4 text-xs font-mono tracking-wider text-neutral-500 dark:text-neutral-400">
-          <span className="text-xs font-mono uppercase text-[#144A32] dark:text-[#22C55E] tracking-widest font-bold">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono uppercase text-amber-500 dark:text-amber-400 tracking-widest font-bold bg-amber-500/10 border border-amber-400/30 shadow-xs">
             {t('pricing.frameTitle')}
           </span>
           <span className="hidden sm:inline">Transparence Tarifaire</span>
@@ -81,12 +81,12 @@ export const PricingFrame: React.FC<PricingFrameProps> = ({ onSelectPackage }) =
             </p>
           </div>
 
-          <div className="flex items-center border border-neutral-300 dark:border-neutral-700 p-0.5 text-xs font-medium shrink-0 self-start md:self-auto">
+          <div className="flex items-center rounded-full border border-neutral-300 dark:border-neutral-700/80 bg-neutral-100/90 dark:bg-neutral-900/90 p-1 text-xs font-medium shrink-0 self-start md:self-auto backdrop-blur-xs">
             <button
               onClick={() => setCategory('all')}
-              className={`px-4 py-2 transition-colors cursor-pointer ${
+              className={`px-4 py-2 rounded-full transition-all cursor-pointer ${
                 category === 'all'
-                  ? 'bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900 font-semibold'
+                  ? 'bg-gradient-to-r from-[#D4AF37] via-[#F3C64F] to-[#C5A059] text-neutral-950 font-bold shadow-[0_0_15px_rgba(212,175,55,0.35)]'
                   : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
               }`}
             >
@@ -94,9 +94,9 @@ export const PricingFrame: React.FC<PricingFrameProps> = ({ onSelectPackage }) =
             </button>
             <button
               onClick={() => setCategory('seo')}
-              className={`px-4 py-2 transition-colors cursor-pointer ${
+              className={`px-4 py-2 rounded-full transition-all cursor-pointer ${
                 category === 'seo'
-                  ? 'bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900 font-semibold'
+                  ? 'bg-gradient-to-r from-[#D4AF37] via-[#F3C64F] to-[#C5A059] text-neutral-950 font-bold shadow-[0_0_15px_rgba(212,175,55,0.35)]'
                   : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
               }`}
             >
@@ -104,9 +104,9 @@ export const PricingFrame: React.FC<PricingFrameProps> = ({ onSelectPackage }) =
             </button>
             <button
               onClick={() => setCategory('web')}
-              className={`px-4 py-2 transition-colors cursor-pointer ${
+              className={`px-4 py-2 rounded-full transition-all cursor-pointer ${
                 category === 'web'
-                  ? 'bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900 font-semibold'
+                  ? 'bg-gradient-to-r from-[#D4AF37] via-[#F3C64F] to-[#C5A059] text-neutral-950 font-bold shadow-[0_0_15px_rgba(212,175,55,0.35)]'
                   : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
               }`}
             >
@@ -115,7 +115,7 @@ export const PricingFrame: React.FC<PricingFrameProps> = ({ onSelectPackage }) =
           </div>
         </div>
 
-        {/* Pricing Cards Grid */}
+        {/* Pricing Cards Grid with Rounded 3xl Curves and Noir & Or Theme */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {filtered.map((item) => {
             const name = t(`pricing.cards.${item.key}.name`);
@@ -128,20 +128,20 @@ export const PricingFrame: React.FC<PricingFrameProps> = ({ onSelectPackage }) =
             return (
               <div
                 key={item.id}
-                className={`hover-gold p-8 sm:p-9 border transition-all flex flex-col justify-between relative ${
+                className={`card-luxury p-8 sm:p-9 rounded-3xl border transition-all flex flex-col justify-between relative ${
                   item.featured
-                    ? 'border-2 border-[#144A32] dark:border-[#22C55E] bg-gradient-to-b from-[#144A32]/6 via-white to-white dark:from-[#22C55E]/10 dark:via-[#111315] dark:to-[#111315] shadow-2xl ring-1 ring-[#144A32]/30 dark:ring-[#22C55E]/30'
-                    : 'border-neutral-200 dark:border-neutral-800 bg-neutral-50/40 dark:bg-neutral-900/20'
+                    ? 'border-2 border-amber-400/90 dark:border-amber-400/90 bg-gradient-to-b from-amber-500/10 via-white to-white dark:from-amber-400/10 dark:via-[#0E1014] dark:to-[#0E1014] shadow-[0_8px_35px_rgba(212,175,55,0.22)] ring-1 ring-amber-400/40'
+                    : 'border-amber-500/20 dark:border-amber-400/20 bg-white/95 dark:bg-[#0D0F13]/95'
                 }`}
               >
                 <div className="space-y-6">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-mono tracking-wider uppercase text-[#144A32] dark:text-[#22C55E] font-semibold">
+                    <span className="text-xs font-mono tracking-wider uppercase text-amber-500 dark:text-amber-400 font-bold px-3 py-1 rounded-full bg-amber-500/10 border border-amber-400/30">
                       {badge}
                     </span>
                     {item.featured && (
-                      <span className="text-[10px] font-mono uppercase bg-[#144A32] text-white dark:bg-[#22C55E] dark:text-neutral-950 px-2.5 py-0.5">
-                        Formule Recommandée
+                      <span className="text-[10px] font-mono uppercase bg-gradient-to-r from-[#D4AF37] to-[#F3C64F] text-neutral-950 font-extrabold px-3 py-1 rounded-full shadow-xs">
+                        Recommandé
                       </span>
                     )}
                   </div>
@@ -151,7 +151,7 @@ export const PricingFrame: React.FC<PricingFrameProps> = ({ onSelectPackage }) =
                       {name}
                     </h3>
                     <div className="mt-3 flex items-baseline gap-2">
-                      <span className="text-3xl sm:text-4xl font-display font-extrabold tracking-tight">
+                      <span className="text-3xl sm:text-4xl font-display font-extrabold tracking-tight text-neutral-950 dark:text-white">
                         {price}
                       </span>
                       <span className="text-xs font-mono text-neutral-500">
@@ -164,10 +164,10 @@ export const PricingFrame: React.FC<PricingFrameProps> = ({ onSelectPackage }) =
                     {desc}
                   </p>
 
-                  <div className="border-t border-neutral-200 dark:border-neutral-800 pt-5 space-y-3">
+                  <div className="border-t border-neutral-200 dark:border-neutral-800/80 pt-5 space-y-3">
                     {features.map((feat, fIdx) => (
                       <div key={fIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700 dark:text-neutral-300">
-                        <Check className="w-4 h-4 text-[#144A32] dark:text-[#22C55E] shrink-0 mt-0.5" />
+                        <Check className="w-4 h-4 text-amber-500 dark:text-amber-400 shrink-0 mt-0.5" />
                         <span className="leading-snug">{feat}</span>
                       </div>
                     ))}
@@ -177,10 +177,10 @@ export const PricingFrame: React.FC<PricingFrameProps> = ({ onSelectPackage }) =
                 <div className="pt-8 mt-6 border-t border-neutral-200/80 dark:border-neutral-800/80">
                   <button
                     onClick={() => onSelectPackage(name)}
-                    className={`w-full py-3.5 px-4 text-xs font-semibold tracking-wide flex items-center justify-center gap-2 transition-all ${
+                    className={`w-full py-3.5 px-4 text-xs font-bold tracking-wide flex items-center justify-center gap-2 transition-all cursor-pointer ${
                       item.featured
-                        ? 'bg-[#144A32] text-white hover:bg-[#0E3624] dark:bg-[#22C55E] dark:text-neutral-950 dark:hover:bg-[#16A34A] shadow'
-                        : 'border border-neutral-300 dark:border-neutral-700 hover:border-neutral-950 dark:hover:border-white text-neutral-900 dark:text-white'
+                        ? 'btn-gold shadow-[0_4px_20px_rgba(212,175,55,0.35)]'
+                        : 'btn-noir'
                     }`}
                   >
                     <span>{item.isQuote ? t('pricing.ctaQuote') : t('pricing.ctaSelect')}</span>

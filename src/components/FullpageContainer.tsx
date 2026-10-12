@@ -113,10 +113,10 @@ export const FullpageContainer: React.FC<FullpageContainerProps> = ({
 
   return (
     <div className="relative w-full min-h-screen bg-white dark:bg-[#090A0B] text-neutral-900 dark:text-neutral-50 transition-colors duration-300">
-      {/* Top Slim Scroll Progress Line */}
-      <div className="fixed top-0 left-0 right-0 z-50 h-[2.5px] bg-neutral-200/50 dark:bg-neutral-800/50 pointer-events-none">
+      {/* Top Slim Scroll Progress Line with Gold Glow */}
+      <div className="fixed top-0 left-0 right-0 z-50 h-[3px] bg-neutral-200/40 dark:bg-neutral-800/40 pointer-events-none">
         <div
-          className="h-full bg-[#144A32] dark:bg-[#22C55E] transition-all duration-150 ease-out"
+          className="h-full bg-gradient-to-r from-[#B45309] via-[#D4AF37] to-[#F59E0B] transition-all duration-150 ease-out shadow-[0_0_10px_rgba(212,175,55,0.8)]"
           style={{ width: `${scrollProgress}%` }}
         />
       </div>
@@ -124,14 +124,14 @@ export const FullpageContainer: React.FC<FullpageContainerProps> = ({
       {/* Main Flowing Children Content - Full Width Edge-to-Edge */}
       <main className="w-full">{children}</main>
 
-      {/* Back to Top Floating Button */}
+      {/* Back to Top Floating Button with Rounded & Gold/Noir Styling */}
       {showBackToTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 left-6 z-30 p-3 border border-neutral-300 dark:border-neutral-700 bg-white/90 dark:bg-[#0E1012]/90 backdrop-blur-md text-neutral-700 dark:text-neutral-200 hover:text-neutral-950 dark:hover:text-white shadow-lg transition-all hover:-translate-y-1"
+          className="fixed bottom-6 left-6 z-30 w-11 h-11 rounded-full border border-amber-500/30 dark:border-amber-400/30 bg-white/90 dark:bg-[#0D0F13]/90 backdrop-blur-md text-neutral-800 dark:text-amber-300 hover:text-amber-500 dark:hover:text-amber-200 hover:border-amber-400 shadow-[0_4px_15px_rgba(212,175,55,0.2)] transition-all hover:-translate-y-1 flex items-center justify-center cursor-pointer"
           aria-label="Retour en haut de page"
         >
-          <ChevronUp className="w-4 h-4" />
+          <ChevronUp className="w-5 h-5 text-amber-500 dark:text-amber-400" />
         </button>
       )}
     </div>
