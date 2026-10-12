@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06120D" />
+      <stop offset="35%" stop-color="#081A13" />
+      <stop offset="70%" stop-color="#090E14" />
+      <stop offset="100%" stop-color="#050608" />
+    </linearGradient>
+
+    <!-- Emerald / Green Glow -->
+    <radialGradient id="greenGlow" cx="65%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.32" />
+      <stop offset="45%" stop-color="#144A32" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#144A32" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Gold Accent Glow -->
+    <radialGradient id="goldGlow" cx="78%" cy="28%" r="40%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#9A7B1C" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Seine River Gradient -->
+    <linearGradient id="seineGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.08" />
+      <stop offset="50%" stop-color="#22C55E" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.15" />
+    </linearGradient>
+
+    <!-- Pin #1 Gradient -->
+    <linearGradient id="pinGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#996515" />
+    </linearGradient>
+
+    <linearGradient id="pinGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ADE80" />
+      <stop offset="60%" stop-color="#22C55E" />
+      <stop offset="100%" stop-color="#144A32" />
+    </linearGradient>
+
+    <!-- Map Grid Pattern -->
+    <pattern id="cityGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#22C55E" stroke-opacity="0.04" stroke-width="1" />
+      <circle cx="0" cy="0" r="1.5" fill="#D4AF37" fill-opacity="0.15" />
+    </pattern>
+
+    <pattern id="dotsGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity="0.06" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="highGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Deep Background Layers -->
+  <rect width="1920" height="1080" fill="url(#bgGrad)" />
+  <rect width="1920" height="1080" fill="url(#cityGrid)" />
+  <rect width="1920" height="1080" fill="url(#dotsGrid)" />
+  <rect width="1920" height="1080" fill="url(#greenGlow)" />
+  <rect width="1920" height="1080" fill="url(#goldGlow)" />
+
+  <!-- ========================================== -->
+  <!-- 1. MAP CARTOGRAPHY / PARIS URBAN NETWORK  -->
+  <!-- ========================================== -->
+  <g id="paris-map-cartography" opacity="0.85">
+    <!-- Seine River stylized winding through Paris -->
+    <path d="M 1920,380 C 1700,420 1550,480 1420,440 C 1280,400 1180,310 1020,340 C 880,370 790,520 620,540 C 460,560 320,480 0,510" 
+          fill="none" stroke="url(#seineGrad)" stroke-width="26" stroke-linecap="round" />
+    <path d="M 1920,380 C 1700,420 1550,480 1420,440 C 1280,400 1180,310 1020,340 C 880,370 790,520 620,540 C 460,560 320,480 0,510" 
+          fill="none" stroke="#22C55E" stroke-opacity="0.3" stroke-width="3" stroke-dasharray="10 14" />
+
+    <!-- Urban Radiating Spokes / Boulevards (Place de l'Étoile & Paris Avenues) -->
+    <g transform="translate(1380, 420)" stroke="#22C55E" stroke-opacity="0.12" stroke-width="1.5">
+      <circle r="60" fill="none" stroke="#22C55E" stroke-opacity="0.18" />
+      <circle r="140" fill="none" stroke="#D4AF37" stroke-opacity="0.15" stroke-dasharray="6 8" />
+      <circle r="240" fill="none" stroke="#22C55E" stroke-opacity="0.10" />
+      <circle r="360" fill="none" stroke="#22C55E" stroke-opacity="0.06" stroke-dasharray="12 12" />
+      <line x1="0" y1="-380" x2="0" y2="380" />
+      <line x1="-380" y1="0" x2="380" y2="0" />
+      <line x1="-270" y1="-270" x2="270" y2="270" />
+      <line x1="-270" y1="270" x2="270" y2="-270" />
+      <line x1="-350" y1="-140" x2="350" y2="140" />
+      <line x1="-350" y1="140" x2="350" y2="-140" />
+    </g>
+
+    <!-- Secondary Node (Paris Est / Nation) -->
+    <g transform="translate(940, 680)" stroke="#22C55E" stroke-opacity="0.08" stroke-width="1.2">
+      <circle r="80" fill="none" />
+      <circle r="180" fill="none" stroke-dasharray="8 8" />
+      <line x1="-200" y1="-100" x2="200" y2="100" />
+      <line x1="-150" y1="150" x2="150" y2="-150" />
+    </g>
+
+    <!-- GPS Navigation Data Coordinates Overlay -->
+    <text x="1420" y="160" font-family="monospace" font-size="13" fill="#22C55E" fill-opacity="0.6" letter-spacing="3">
+      LAT: 48.8566° N | LON: 2.3522° E | ZONE: PARIS LOCAL PACK
+    </text>
+    <text x="1420" y="185" font-family="monospace" font-size="11" fill="#D4AF37" fill-opacity="0.7" letter-spacing="2">
+      SYSTEM: GOOGLE MAPS ALGORITHM v2026.4 // LOCAL PACK 3-PACK ENG
+    </text>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- 2. DATA BEACONS & INTERCONNECTED GEOSPATIAL SEO NETWORK   -->
+  <!-- ========================================================= -->
+  <g id="network-lines">
+    <!-- Connecting dashed beams between nodes -->
+    <path d="M 1080,260 L 1320,310 L 1580,240 L 1480,510 L 1260,620 L 1040,540 Z" 
+          fill="#144A32" fill-opacity="0.07" stroke="#22C55E" stroke-opacity="0.3" stroke-width="2" stroke-dasharray="6 6" />
+
+    <path d="M 1320,310 L 1680,460" stroke="#D4AF37" stroke-opacity="0.4" stroke-width="1.8" stroke-dasharray="4 8" />
+    <path d="M 1580,240 L 1760,290" stroke="#22C55E" stroke-opacity="0.3" stroke-width="1.5" />
+    <path d="M 1260,620 L 1520,720" stroke="#22C55E" stroke-opacity="0.25" stroke-width="1.5" />
+
+    <!-- Pulse Concentric Rings around Ranking Pins -->
+    <g transform="translate(1320, 310)">
+      <circle r="45" fill="none" stroke="#D4AF37" stroke-opacity="0.5" stroke-width="1.5" filter="url(#softGlow)" />
+      <circle r="75" fill="none" stroke="#22C55E" stroke-opacity="0.3" stroke-width="1.2" stroke-dasharray="6 6" />
+      <circle r="110" fill="none" stroke="#22C55E" stroke-opacity="0.15" stroke-width="1" />
+    </g>
+
+    <g transform="translate(1580, 240)">
+      <circle r="35" fill="none" stroke="#22C55E" stroke-opacity="0.4" stroke-width="1.2" />
+      <circle r="60" fill="none" stroke="#22C55E" stroke-opacity="0.2" stroke-dasharray="4 4" />
+    </g>
+  </g>
+
+  <!-- ====================================================== -->
+  <!-- 3. GOOGLE MAPS PINS & TOP LOCAL PACK BADGES            -->
+  <!-- ====================================================== -->
+
+  <!-- Top #1 Ranking Location Pin (Golden Star & Crown) -->
+  <g transform="translate(1320, 310)" filter="url(#softGlow)">
+    <!-- Shadow -->
+    <ellipse cx="0" cy="48" rx="20" ry="7" fill="#000000" fill-opacity="0.6" />
+    
+    <!-- Pin Head -->
+    <path d="M 0,0 C -22,-36 -32,-56 -32,-80 C -32,-104 -14,-122 0,-122 C 14,-122 32,-104 32,-80 C 32,-56 22,-36 0,0 Z" 
+          fill="url(#pinGoldGrad)" stroke="#FFFFFF" stroke-width="2.5" />
+    
+    <!-- Pin Inner Circle -->
+    <circle cx="0" cy="-80" r="17" fill="#144A32" />
+    
+    <!-- Gold Star #1 in Center -->
+    <path d="M 0,-88 L 3.5,-79 L 13,-79 L 5,-73 L 8,-64 L 0,-70 L -8,-64 L -5,-73 L -13,-79 L -3.5,-79 Z" fill="#FDE047" />
+
+    <!-- #1 Badge Flag Floating Right -->
+    <g transform="translate(42, -95)">
+      <rect x="0" y="0" width="138" height="34" rx="4" fill="#144A32" stroke="#D4AF37" stroke-width="1.5" />
+      <rect x="3" y="3" width="28" height="28" rx="3" fill="#D4AF37" />
+      <text x="17" y="22" font-family="sans-serif" font-weight="900" font-size="15" fill="#144A32" text-anchor="middle">#1</text>
+      <text x="38" y="16" font-family="sans-serif" font-weight="700" font-size="10" fill="#FFFFFF" letter-spacing="0.5">TOP GOOGLE MAPS</text>
+      <text x="38" y="27" font-family="sans-serif" font-size="9" fill="#22C55E">4.9 ★ (48 avis vérifiés)</text>
+    </g>
+  </g>
+
+  <!-- Location Pin #2 (Emerald Green) -->
+  <g transform="translate(1580, 240)">
+    <ellipse cx="0" cy="38" rx="15" ry="5" fill="#000000" fill-opacity="0.5" />
+    <path d="M 0,0 C -18,-28 -25,-44 -25,-64 C -25,-82 -11,-96 0,-96 C 11,-96 25,-82 25,-64 C 25,-44 18,-28 0,0 Z" 
+          fill="url(#pinGreenGrad)" stroke="#FFFFFF" stroke-width="1.8" />
+    <circle cx="0" cy="-64" r="13" fill="#06120D" />
+    <text x="0" y="-59" font-family="sans-serif" font-weight="800" font-size="12" fill="#4ADE80" text-anchor="middle">#2</text>
+    <g transform="translate(32, -75)">
+      <rect x="0" y="0" width="105" height="26" rx="3" fill="#0B130E" stroke="#22C55E" stroke-opacity="0.6" stroke-width="1" />
+      <text x="8" y="17" font-family="sans-serif" font-weight="600" font-size="9.5" fill="#E2E8F0">Top 3 Local Pack</text>
+    </g>
+  </g>
+
+  <!-- Location Pin #3 -->
+  <g transform="translate(1080, 260)">
+    <ellipse cx="0" cy="34" rx="14" ry="5" fill="#000000" fill-opacity="0.4" />
+    <path d="M 0,0 C -16,-26 -22,-40 -22,-58 C -22,-74 -10,-86 0,-86 C 10,-86 22,-74 22,-58 C 22,-40 16,-26 0,0 Z" 
+          fill="url(#pinGreenGrad)" stroke="#FFFFFF" stroke-width="1.5" />
+    <circle cx="0" cy="-58" r="11" fill="#06120D" />
+    <text x="0" y="-54" font-family="sans-serif" font-weight="800" font-size="11" fill="#4ADE80" text-anchor="middle">#3</text>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 4. MODERN WEB CREATION & HIGH-PERFORMANCE CODE TELEMETRY  -->
+  <!-- ======================================================== -->
+  <g id="web-creation-isometric" transform="translate(1380, 560)">
+    <!-- Browser Window Card Mockup (representing bespoke web development) -->
+    <g filter="url(#softGlow)">
+      <!-- Card Base -->
+      <rect x="0" y="0" width="340" height="210" rx="8" fill="#0C1014" fill-opacity="0.95" stroke="#22C55E" stroke-opacity="0.4" stroke-width="1.5" />
+      
+      <!-- Window Titlebar -->
+      <rect x="0" y="0" width="340" height="28" rx="8" fill="#141E19" />
+      <circle cx="16" cy="14" r="4" fill="#EF4444" />
+      <circle cx="28" cy="14" r="4" fill="#F59E0B" />
+      <circle cx="40" cy="14" r="4" fill="#10B981" />
+      
+      <!-- Window Search / URL Bar -->
+      <rect x="60" y="6" width="190" height="16" rx="4" fill="#0A0E0C" />
+      <text x="70" y="18" font-family="monospace" font-size="8.5" fill="#22C55E">https://netsureconsulting.com</text>
+      
+      <!-- Live Web Performance Badge -->
+      <rect x="260" y="6" width="70" height="16" rx="3" fill="#144A32" />
+      <text x="295" y="17.5" font-family="monospace" font-weight="700" font-size="8.5" fill="#4ADE80" text-anchor="middle">PERF 100%</text>
+
+      <!-- Web Content Simulation -->
+      <!-- Hero Mockup Header inside Browser -->
+      <rect x="18" y="42" width="170" height="12" rx="2" fill="#D4AF37" fill-opacity="0.8" />
+      <rect x="18" y="60" width="120" height="8" rx="2" fill="#94A3B8" fill-opacity="0.5" />
+      
+      <!-- CTA Button in Mockup -->
+      <rect x="18" y="76" width="75" height="18" rx="3" fill="#22C55E" />
+      <text x="55.5" y="88" font-family="sans-serif" font-weight="700" font-size="8" fill="#06120D" text-anchor="middle">CONTACT</text>
+
+      <!-- Mini Wireframe Bento Cards inside Mockup -->
+      <rect x="18" y="106" width="92" height="85" rx="4" fill="#131B17" stroke="#22C55E" stroke-opacity="0.2" />
+      <text x="26" y="124" font-family="monospace" font-size="8" fill="#D4AF37">SEO AUDIT</text>
+      <path d="M 26,170 L 45,150 L 65,160 L 95,135" fill="none" stroke="#22C55E" stroke-width="2" />
+
+      <rect x="120" y="106" width="92" height="85" rx="4" fill="#131B17" stroke="#22C55E" stroke-opacity="0.2" />
+      <text x="128" y="124" font-family="monospace" font-size="8" fill="#38BDF8">UX / UI</text>
+      <rect x="128" y="136" width="76" height="40" rx="2" fill="#0B130E" />
+
+      <rect x="222" y="106" width="100" height="85" rx="4" fill="#131B17" stroke="#D4AF37" stroke-opacity="0.3" />
+      <text x="230" y="124" font-family="monospace" font-size="8" fill="#22C55E">CONVERSION</text>
+      <text x="230" y="152" font-family="monospace" font-weight="700" font-size="16" fill="#D4AF37">+340%</text>
+      <text x="230" y="172" font-family="sans-serif" font-size="8" fill="#94A3B8">Appels entrants</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 5. FLOATING METRIC TELEMETRY PILL & KPI BADGES           -->
+  <!-- ======================================================== -->
+  <g transform="translate(1120, 680)" filter="url(#softGlow)">
+    <rect x="0" y="0" width="220" height="65" rx="6" fill="#08100C" fill-opacity="0.9" stroke="#D4AF37" stroke-width="1.2" />
+    <circle cx="28" cy="32" r="14" fill="#144A32" />
+    <path d="M 23,32 L 27,36 L 34,27" fill="none" stroke="#4ADE80" stroke-width="2.5" stroke-linecap="round" />
+    <text x="50" y="26" font-family="sans-serif" font-weight="800" font-size="12" fill="#FFFFFF">GARANTIE TOP 3</text>
+    <text x="50" y="42" font-family="monospace" font-size="10" fill="#D4AF37">Pacte de Résultat ou Remboursé</text>
+    <text x="50" y="54" font-family="sans-serif" font-size="9" fill="#94A3B8">Exclusivité 1 client par métier/secteur</text>
+  </g>
+
+  <!-- Left Bottom Decorative Code / Tech Stream -->
+  <g transform="translate(80, 880)" opacity="0.45" font-family="monospace" font-size="11" fill="#22C55E">
+    <text x="0" y="0">&lt;service name="Google-Maps-Local-SEO" location="Paris-FR" status="ACTIVE"&gt;</text>
+    <text x="20" y="20">&lt;metric:position target="TOP_3" current="#1" delta="+145_calls_per_month" /&gt;</text>
+    <text x="20" y="40">&lt;service:web type="Bespoke-Fullstack-Web-Creation" lighthouse="100/100" /&gt;</text>
+    <text x="0" y="60">&lt;/service&gt;</text>
+  </g>
+
+  <!-- Top-Right Geometric Radar Hexagon & NSC Accent -->
+  <g transform="translate(1780, 140)" opacity="0.5">
+    <polygon points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20" fill="none" stroke="#D4AF37" stroke-width="1.5" />
+    <polygon points="0,-25 22,-12 22,12 0,25 -22,12 -22,-12" fill="none" stroke="#22C55E" stroke-width="1" />
+    <circle cx="0" cy="0" r="4" fill="#22C55E" />
+  </g>
+</svg>

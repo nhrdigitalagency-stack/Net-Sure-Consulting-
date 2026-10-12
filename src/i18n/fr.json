@@ -1,0 +1,460 @@
+{
+  "nav": {
+    "brand": "NET SURE CONSULTING",
+    "home": "Accueil",
+    "presentation": "Présentation",
+    "services": "Services",
+    "differenciators": "Différence",
+    "pricing": "Tarifs",
+    "consulting": "Conseils",
+    "training": "Formations",
+    "infra": "Infrastructures",
+    "about": "À propos",
+    "careers": "Recrutement",
+    "contact": "Contact",
+    "cta": "Audit gratuit",
+    "themeLight": "Activer le mode clair",
+    "themeDark": "Activer le mode sombre",
+    "menuOpen": "Ouvrir le menu de navigation",
+    "menuClose": "Fermer le menu"
+  },
+  "frames": {
+    "f01": "01 / Accueil",
+    "f02": "02 / Présentation",
+    "f03": "03 / Services",
+    "f04": "04 / Différence",
+    "f05": "05 / Tarifs",
+    "f06": "06 / Conseils",
+    "f07": "07 / Formations",
+    "f08": "08 / Infrastructures",
+    "f09": "09 / À propos",
+    "f10": "10 / Emploi",
+    "f11": "11 / Contact"
+  },
+  "hero": {
+    "kicker": "Agence Référencement & Digital — Paris & Île-de-France",
+    "title": "Invisible sur Google Maps ? On vous met dans le TOP 3 en 90 jours.",
+    "subtitle": "On ne vend pas du SEO. On installe un système qui remplit votre agenda. Pour commerçants, artisans et professions libérales à Paris.",
+    "punchline": "On ne fait pas du référencement. On installe une machine à clients. Pas de jargon.",
+    "ctaEligibility": "Tester mon éligibilité en 2 min",
+    "ctaAudit": "Demander un audit gratuit",
+    "statsLabel1": "Objectif contractuel",
+    "statsVal1": "Top 3 Maps",
+    "statsLabel2": "Délai moyen",
+    "statsVal2": "90 Jours",
+    "statsLabel3": "Taux de succès",
+    "statsVal3": "98%"
+  },
+  "presentation": {
+    "frameTitle": "Expertise & Vision",
+    "headline": "Votre expert en référencement et création de sites web.",
+    "body1": "Nous accompagnons les PME, artisans et professions libérales pour transformer leur présence numérique en croissance mesurable et pérenne.",
+    "body2": "Notre approche associe rigueur d'ingénierie, stratégie éditoriale affûtée et optimisation technique de pointe. Pas d'artifice, pas de promesses en l'air : des résultats d'acquisition tangibles.",
+    "pillars": {
+      "strategy": {
+        "title": "Stratégie",
+        "desc": "Analyse de concurrence locale, ciblage des intentions de recherche les plus rentables et structuration du profil Google."
+      },
+      "technique": {
+        "title": "Technique",
+        "desc": "Vitesse d'affichage maximale, balisage Schema.org, propreté de code et cohérence totale des signaux NAP."
+      },
+      "content": {
+        "title": "Contenu",
+        "desc": "Rédaction calibrée pour l'intention locale, publications régulières et acquisition d'avis clients vérifiés."
+      }
+    }
+  },
+  "services": {
+    "frameTitle": "4 Pôles d'intervention",
+    "headline": "Une chaîne complète : du premier clic jusqu'au cœur des systèmes.",
+    "consulting": {
+      "num": "01",
+      "title": "Conseils",
+      "desc": "Accompagnement de l'expression du besoin jusqu'à la livraison, formation des équipes et conduite du changement."
+    },
+    "web": {
+      "num": "02",
+      "title": "Création Web",
+      "desc": "Site vitrine, institutionnel, blog et e-commerce sur mesure. Vitesse extrême, design épuré et optimisation SEO native."
+    },
+    "training": {
+      "num": "03",
+      "title": "Formations",
+      "desc": "Partenariat officiel AGENIUS. Cursus certifiants et montées en compétences sur l'ensemble du territoire français."
+    },
+    "infra": {
+      "num": "04",
+      "title": "Infrastructures",
+      "desc": "Experts mainframes et environnements Open, infogérance, hébergement et data centers avec engagement ferme de résultats."
+    }
+  },
+  "differenciators": {
+    "frameTitle": "Ce qui nous rend différents",
+    "headline": "5 engagements concrets qui changent la donne.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Double expertise web et infrastructure",
+        "desc": "La plupart font du joli. Nous, du joli qui tient la charge et respecte les contraintes d'architectures les plus exigeantes."
+      },
+      {
+        "num": "02",
+        "title": "Pas de blabla",
+        "desc": "Du trafic qualifié qui devient de vrais clients en boutique ou en cabinet. Chaque euro investi est tracé et justifié."
+      },
+      {
+        "num": "03",
+        "title": "Formation incluse",
+        "desc": "Grâce à notre partenariat AGENIUS, vous apprenez à piloter vos outils et devenez autonome pour faire vivre vos contenus."
+      },
+      {
+        "num": "04",
+        "title": "Interlocuteur unique",
+        "desc": "De l'analyse initiale du besoin jusqu'à l'exploitation data center, un seul chef de projet dédié suit l'intégralité de votre dossier."
+      },
+      {
+        "num": "05",
+        "title": "Engagement de résultats",
+        "desc": "Des résultats mesurables et des livrables concrets contractuels, pas un vague engagement de moyens hérité du conseil classique."
+      }
+    ]
+  },
+  "pricing": {
+    "frameTitle": "Grille Tarifaire",
+    "headline": "Des forfaits clairs et transparents. Aucun coût caché.",
+    "periodNotice": "Tarifs annuels ou forfaits au livrable · Prix HT",
+    "ctaSelect": "Sélectionner cette offre",
+    "ctaQuote": "Demander un devis",
+    "deposit": "Acompte 50% possible :",
+    "cards": {
+      "visibilite": {
+        "badge": "Entrée de gamme",
+        "name": "Pack Visibilité",
+        "price": "399 €",
+        "period": "HT / an (12 mois)",
+        "desc": "Renforcer la visibilité en ligne, mieux se positionner face à la concurrence, mise en place du système numérique et de l'IA.",
+        "features": [
+          "Mise à niveau profil Google My Business",
+          "Harmonisation des informations locales (NAP)",
+          "Système numérique et intégration IA",
+          "Positionnement concurrentiel de proximité",
+          "Option acompte 50% (199,50 € HT)"
+        ]
+      },
+      "seoPremium": {
+        "badge": "Recommandé Paris & IDF",
+        "name": "Pack SEO Premium",
+        "price": "649 €",
+        "period": "HT / an (12 mois)",
+        "desc": "Le programme complet pour viser le Top 3 Google Maps et dominer les requêtes locales en 90 jours.",
+        "features": [
+          "Audit SEO complet (technique, Maps, réputation)",
+          "Optimisation Google Maps poussée (4 posts, photos, catégories)",
+          "SEO du site : balises, maillage, indexation et vitesse",
+          "2 pages optimisées + 1 article local (600-800 mots)",
+          "Script de collecte d'avis (objectif +10 avis en 30j)",
+          "Suivi et reporting hebdomadaire sur 30 jours",
+          "Option acompte 50% (324,50 € HT)"
+        ]
+      },
+      "visibilitePremium": {
+        "badge": "Sur devis complet",
+        "name": "Pack Visibilité Premium",
+        "price": "4 200 €",
+        "period": "HT (sur 4-5 mois)",
+        "desc": "Accompagnement d'envergure pour PME, consultants et cabinets : création complète de site, annuaires et LinkedIn.",
+        "features": [
+          "Audit de présence digitale approfondi (600 €)",
+          "Optimisation profils et annuaires sectoriels (800 €)",
+          "Micro-site 3 à 5 pages avec domaine et hébergement 1 an (1 200 €)",
+          "Stratégie de contenu : 4 articles SEO + 8 visuels LinkedIn (700 €)",
+          "Suivi mensuel personnalisé sur 3 mois (900 €)",
+          "Paiement 50% à la commande, 50% à la livraison"
+        ]
+      },
+      "designPro": {
+        "badge": "Identité de marque",
+        "name": "Pack Design Pro",
+        "price": "890 €",
+        "period": "HT (livraison complète)",
+        "desc": "Création d'une identité visuelle sur mesure et maquettes complètes adaptées mobile, tablette et ordinateur.",
+        "features": [
+          "Identité visuelle sur mesure (palette, typos, guide)",
+          "Maquettes page d'accueil + jusqu'à 5 pages internes",
+          "Déclinaisons complètes responsive (mobile/tablette/desktop)",
+          "Charte graphique complète et guide de composants",
+          "Livraison des fichiers HD et sources (Figma ou PDF)",
+          "Paiement en 2 fois (445 € HT)"
+        ]
+      },
+      "siteVitrine": {
+        "badge": "Création Web",
+        "name": "Création Site Vitrine",
+        "price": "499 €",
+        "period": "HT (clé en main)",
+        "desc": "Conception sur mesure à votre image, valorisant votre savoir-faire avec intégration des réseaux sociaux.",
+        "features": [
+          "Conception sur mesure adaptée à votre activité",
+          "Présentation valorisée des prestations et de l'équipe",
+          "Articles de blog illimités",
+          "Intégration des réseaux sociaux et formulaires",
+          "Optimisation SEO native pour moteurs de recherche",
+          "Option acompte 50% (249,50 € HT)"
+        ]
+      },
+      "siteEcommerce": {
+        "badge": "Boutique en ligne",
+        "name": "Création Site E-Commerce",
+        "price": "1 499 €",
+        "period": "HT (clé en main)",
+        "desc": "Plateforme marchande ultra-rapide et sécurisée avec gestion de catalogue, panier et paiement intégré.",
+        "features": [
+          "Catalogue produits complet avec variantes et stocks",
+          "Processus de commande optimisé et panier dynamique",
+          "Paiement sécurisé par carte, Stripe ou virement",
+          "Design 100% adaptatif mobile et tablette",
+          "Recherche, recommandations et promotions",
+          "Gestion des retours et remboursements",
+          "Paiement en 2 fois (749,50 € HT)"
+        ]
+      }
+    }
+  },
+  "consulting": {
+    "frameTitle": "Conseil Métier",
+    "headline": "De l'analyse d'opportunité à la conduite du changement.",
+    "intro": "Nos consultants seniors accompagnent les directions générales et métiers de l'expression du besoin initial jusqu'au déploiement final, en garantissant l'adhésion des utilisateurs grâce à des formations ciblées.",
+    "sectorTitle": "Secteur d'intervention de référence : Assurances",
+    "sectorDesc": "Une maîtrise éprouvée des écosystèmes réglementaires, métiers et techniques du monde de l'assurance :",
+    "sectors": [
+      { "name": "Assurance Vie", "desc": "Épargne, gestion des contrats, fiscalité et conformité." },
+      { "name": "Santé & Prévoyance", "desc": "Tiers-payant, télétransmission, régimes obligatoires et complémentaires." },
+      { "name": "IARD", "desc": "Incendie, Accidents et Risques Divers pour particuliers et flottes d'entreprises." },
+      { "name": "Retraite & Prévoyance Collective", "desc": "Gestion des rentes, liquidation des droits et portabilité." }
+    ],
+    "deliverables": "Livrables systématiques : cahiers des charges fonctionnels, matrices de recette, guides utilisateurs et kits de formation."
+  },
+  "training": {
+    "frameTitle": "Formations Partenaire AGENIUS",
+    "headline": "Développez les compétences clés de vos équipes partout en France.",
+    "intro": "Dans le cadre de notre partenariat avec AGENIUS, nous dispensons des programmes de formation certifiants et opérationnels sur l'ensemble du territoire national.",
+    "categories": {
+      "it": {
+        "title": "Informatique & Systèmes",
+        "items": ["SGBD (Oracle, DB2, PostgreSQL)", "Mainframe & Grands Systèmes", "Système & Réseau", "Gestion de Projets IT", "Développement & Méthodes agiles"]
+      },
+      "business": {
+        "title": "Cursus Métiers",
+        "items": ["Cursus AMOA (Maîtrise d'ouvrage)", "Cursus AMOE (Maîtrise d'œuvre)", "Développement Mainframe COBOL", "Oracle PL/SQL", "Développement Web moderne (Java, C#, .NET)"]
+      },
+      "users": {
+        "title": "Utilisateurs & Bureautique",
+        "items": ["Bureautique avancée & Tableurs", "PAO / DAO & Graphisme", "Outils Web & Messageries", "Finance, Comptabilité & Audit", "Contrôle de Gestion, Progiciels & GMAO"]
+      },
+      "hr": {
+        "title": "RH & Management",
+        "items": ["Management opérationnel & transversal", "Développement personnel & efficacité", "Communication professionnelle", "Sécurité au travail & gestion des risques"]
+      }
+    }
+  },
+  "infrastructure": {
+    "frameTitle": "Infrastructures & Cloud",
+    "headline": "Experts Mainframe et Open. Engagement contractuel de résultats.",
+    "intro": "Une infrastructure résiliente est le socle de toute stratégie numérique durable. Nous administrons, sécurisons et industrialisons vos parcs applicatifs.",
+    "pillars": [
+      {
+        "title": "Infogérance",
+        "desc": "Maintien en condition opérationnelle (MCO) de vos systèmes, middleware, SGBD et réseaux. Gestion opérationnelle continue des applications critiques et forfaits de fonction."
+      },
+      {
+        "title": "Conseils & Architecture",
+        "desc": "Gouvernance IT, organisation de la production informatique, expertise en architecture de systèmes complexes, AMOA technique et direction de projets d'infrastructure."
+      },
+      {
+        "title": "Intégration & Transformation",
+        "desc": "Déploiement et outillage des processus DevOps/ITSM, industrialisation de la chaîne de production, maîtrise d'œuvre des grands chantiers de migration."
+      },
+      {
+        "title": "Expertise Spécifique",
+        "desc": "Réseaux sécurisés, Systèmes d'exploitation unifiés, Middleware d'entreprise, SGBD haute disponibilité et Exploitation 24/7."
+      }
+    ]
+  },
+  "about": {
+    "frameTitle": "À Propos de Net Sure Consulting",
+    "headline": "Fondée en 2014, filiale à 100 % du Groupe NET SURE.",
+    "story": "Entreprise de Services du Numérique (ESN) de droit français, Net Sure Consulting opère à l'intersection stratégique du webmarketing de pointe, du développement logiciel sur mesure et du conseil en systèmes d'information.",
+    "forcesTitle": "Nos Forces Distinctives",
+    "forces": [
+      {
+        "title": "Dimension nationale et internationale",
+        "desc": "Alliance unique entre sécurité des données et efficacité webmarketing, appuyée sur un réseau de partenaires fiables."
+      },
+      {
+        "title": "Agents formés sur mesure",
+        "desc": "Protection active et amplification méthodique de la visibilité numérique de nos clients."
+      },
+      {
+        "title": "Innovation et anticipation",
+        "desc": "Solutions technologiques de pointe en avance sur les mutations d'algorithmes et de sécurité."
+      },
+      {
+        "title": "Ciblage à haute rentabilité",
+        "desc": "Concentration exclusive sur les segments de clientèle les plus rentables et fidèles."
+      },
+      {
+        "title": "Trafic qualifié & conversions",
+        "desc": "Analyse rigoureuse des parcours pour attirer des visiteurs pertinents et maximiser la conversion."
+      }
+    ],
+    "valuesTitle": "Nos Valeurs Cardinales",
+    "values": ["Intégrité", "Transparence", "Innovation", "Fiabilité", "Collaboration", "Responsabilité", "Formation continue", "Engagement qualité"],
+    "knowhowTitle": "Notre Savoir-Faire Concret",
+    "knowhow": [
+      "Mise à jour et audit complet Google My Business (horaires, photos, sécurité, doublons, avis)",
+      "Optimisation Google & visibilité assistée par IA",
+      "Référencement naturel local (SEO) sans jargon",
+      "Création de sites vitrine, institutionnels et e-commerce haute performance"
+    ],
+    "partnersTitle": "Partenaires & Écosystème Institutionnel",
+    "faqTitle": "Questions Fréquentes (FAQ)",
+    "faqSubtitle": "Comprendre notre approche du référencement local, nos méthodes d'ingénierie et nos engagements contractuels.",
+    "faq": [
+      {
+        "id": "faq-1",
+        "question": "Comment fonctionne concrètement l'engagement Top 3 Google Maps en 90 jours ?",
+        "answer": "Nous commençons par un audit technique exhaustif de votre profil Google Business et de votre zone de chalandise. Nous éliminons les doublons, sécurisons la fiche et harmonisons strictement vos informations NAP (Nom, Adresse, Téléphone) sur l'ensemble des annuaires d'autorité. Nous optimisons les catégories secondaires, paramétrons vos produits et services, et activons un protocole continu d'acquisition d'avis clients réels avec des publications ciblées. Si les objectifs de visibilité ne sont pas atteints au terme des 90 jours, nos équipes prolongent l'accompagnement sans aucun coût additionnel jusqu'à l'obtention du classement visé."
+      },
+      {
+        "id": "faq-2",
+        "question": "Pourquoi tous les échanges s'effectuent-ils exclusivement par email sous 24h ouvrées ?",
+        "answer": "Fidèles à la rigueur d'une Entreprise de Services du Numérique (ESN), nous privilégions l'écrit pour garantir une traçabilité intégrale de chaque demande, consigner chaque jalon technique et éviter toute ambiguïté sur les livrables. Notre engagement contractuel est strict : chaque message adressé à contact@cnetsure.com reçoit une réponse approfondie de nos experts sous 24 heures ouvrées."
+      },
+      {
+        "id": "faq-3",
+        "question": "En quoi consiste la double compétence Web et Infrastructure de Net Sure Consulting ?",
+        "answer": "Contrairement à une agence marketing classique focalisée uniquement sur l'apparence visuelle, Net Sure Consulting est issue du Groupe NET SURE avec un savoir-faire historique en grands systèmes, architectures de données et serveurs d'entreprise. Vos plateformes web ne sont pas de simples vitrines : elles sont conçues pour charger à une vitesse maximale, supporter de forts volumes de trafic et respecter les normes de sécurité informatique les plus exigeantes."
+      },
+      {
+        "id": "faq-4",
+        "question": "Proposez-vous des facilités de paiement ou des acomptes sur vos packs ?",
+        "answer": "Oui. Pour accompagner le développement des commerçants, artisans et indépendants sans impacter leur trésorerie, la majorité de nos offres (Pack Visibilité à 399 € HT, Pack SEO Premium à 649 € HT, Création de sites vitrine et e-commerce) prévoient la possibilité d'un acompte de 50 % à la commande, le solde étant réglé lors de la livraison définitive. Le Pack Visibilité Premium (4 200 € HT) bénéficie également d'un échelonnement 50/50 sur la durée du projet."
+      },
+      {
+        "id": "faq-5",
+        "question": "Restons-nous propriétaires de nos outils et de nos contenus après la livraison ?",
+        "answer": "Absolument. Vous demeurez le propriétaire exclusif de l'intégralité de vos comptes, noms de domaine, fiches Google Maps et bases de données. Dans le cadre de notre alliance de formation avec AGENIUS, nous formons également vos collaborateurs pour vous garantir une parfaite autonomie opérationnelle dans l'actualisation de vos contenus."
+      }
+    ]
+  },
+  "careers": {
+    "frameTitle": "Offres d'Emploi",
+    "headline": "Rejoignez nos équipes d'experts à Paris.",
+    "intro": "Nous recrutons des talents rigoureux, passionnés par l'excellence technique et la clarté du conseil.",
+    "jobTitle": "Analyste d'affaires SCT (SEPA Credit Transfer)",
+    "jobType": "CDI · Paris 18e / Hybride",
+    "jobDept": "Pôle Systèmes Bancaires & Moyens de Paiement",
+    "missionTitle": "Missions principales",
+    "mission": "Renforcer une équipe projet d'envergure. Rédiger les spécifications fonctionnelles détaillées issues d'ateliers métier et les traduire en spécifications techniques pour les développeurs. Contribuer activement à la recette globale (élaboration du cahier de recette, exécution rigoureuse des cas de test et suivi des anomalies).",
+    "skillsTitle": "Profil et compétences requises",
+    "skills": [
+      "Maîtrise approfondie des flux de virements SEPA (SCT / SEPA Credit Transfer)",
+      "Grande autonomie, rigueur de formalisation et proactivité",
+      "Aisance relationnelle, esprit de synthèse et animation d'ateliers",
+      "Environnement technique : COBOL / Mainframe, analyse de logs, requêtes SQL",
+      "Outillage projet : Postman, SQL, Octane, JIRA",
+      "Méthodologie agile et maîtrise de l'anglais technique appréciées"
+    ],
+    "ctaApply": "Postuler à cette offre"
+  },
+  "contact": {
+    "frameTitle": "Contact & Devis",
+    "headline": "Parlons de votre projet.",
+    "intro": "Réponse garantie sous 24 h ouvrées. Pour assurer une traçabilité écrite irréprochable et un suivi d'ingénierie rigoureux, nous échangeons exclusivement par email.",
+    "addressTitle": "Siège & Bureaux",
+    "addressVal": "40 rue Damrémont, 75018 Paris",
+    "emailTitle": "Contact Direct",
+    "emailVal": "contact@cnetsure.com",
+    "slaTitle": "Engagement Réponse",
+    "slaVal": "Sous 24 h ouvrées par écrit",
+    "form": {
+      "nameLabel": "Nom et prénom *",
+      "namePlaceholder": "ex. Alexandre Martin",
+      "emailLabel": "Adresse email professionnelle *",
+      "emailPlaceholder": "alexandre@entreprise.fr",
+      "companyLabel": "Nom de l'entreprise *",
+      "companyPlaceholder": "Cabinet Martin & Associés",
+      "numberLabel": "Numéro de téléphone ou SIRET *",
+      "numberPlaceholder": "06 12 34 56 78 ou 944 590 371",
+      "offerLabel": "Offre ou prestation souhaitée *",
+      "offerSelectPlaceholder": "Sélectionnez une formule",
+      "messageLabel": "Votre message ou description du besoin *",
+      "messagePlaceholder": "Décrivez votre projet, vos objectifs de visibilité ou votre besoin technique...",
+      "checkboxDevisLabel": "Je souhaite recevoir un devis détaillé pour le Pack Visibilité Premium (4 200 € HT)",
+      "submitBtn": "Envoyer le message",
+      "submitting": "Transmission en cours...",
+      "successTitle": "Message transmis avec succès",
+      "successDesc": "Votre demande a été enregistrée. Notre équipe analyse votre dossier et vous répondra sous 24 heures ouvrées à",
+      "errorRequired": "Veuillez renseigner ce champ obligatoire.",
+      "errorEmail": "Veuillez saisir une adresse email valide."
+    },
+    "footer": {
+      "legalNotice": "© 2026 NET SURE CONSULTING. Tous droits réservés.",
+      "designBy": "Design par X.Art Digital",
+      "cgu": "Conditions Générales d'Utilisation (CGU)",
+      "cookies": "Politique de cookies (UE)",
+      "confidentiality": "Données personnelles (RGPD)"
+    }
+  },
+  "eligibility": {
+    "title": "Diagnostic d'Éligibilité Google Maps",
+    "subtitle": "Évaluez votre potentiel d'acquisition locale en 3 questions rapides.",
+    "step1Title": "01. Votre secteur d'activité",
+    "step1Desc": "Sélectionnez votre typologie d'activité :",
+    "step2Title": "02. Votre localisation principale",
+    "step2Desc": "Où sont situés vos clients ou votre établissement ?",
+    "step3Title": "03. État actuel de votre fiche Google",
+    "step3Desc": "Quelle est la situation de votre visibilité actuelle ?",
+    "businessTypes": {
+      "liberal": "Profession libérale (avocat, santé, expert-comptable)",
+      "craft": "Artisanat & Bâtiment de proximité",
+      "retail": "Commerce de détail, boutique, restaurant",
+      "service": "PME de services B2B / B2C",
+      "other": "Autre activité indépendante"
+    },
+    "mapStatus": {
+      "none": "Fiche inexistante ou invisible (recherche infructueuse)",
+      "bad": "Fiche existante mais reléguée au-delà du Top 10",
+      "unverified": "Fiche non revendiquée, doublon ou avis négatifs non traités"
+    },
+    "resultTitle": "Votre Diagnostic Éligibilité",
+    "scoreLabel": "Potentiel d'accélération",
+    "scoreVal": "Très Élevé (Top 3 atteignable)",
+    "recommendation": "Votre activité bénéficie d'un volume de recherche de proximité soutenu à Paris et Île-de-France. Un déploiement de 90 jours sur votre fiche Google Maps et vos signaux NAP permettra de capter les requêtes à forte intention d'achat.",
+    "ctaTransfer": "Transférer ce diagnostic pour mon audit gratuit",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "close": "Fermer"
+  },
+  "supportWidget": {
+    "trigger": "Support Client",
+    "title": "Net Sure Support",
+    "subtitle": "Réponse sous 24 h ouvrées · contact@cnetsure.com",
+    "welcome": "Bonjour. Comment pouvons-nous vous aider aujourd'hui ?",
+    "chip1": "Demander un audit gratuit",
+    "chip2": "Obtenir un devis",
+    "chip3": "Poser une question technique",
+    "inputPlaceholder": "Écrivez votre message...",
+    "emailPlaceholder": "Votre adresse email...",
+    "send": "Envoyer",
+    "success": "Message préparé ! Un email a été généré vers contact@cnetsure.com.",
+    "copyEmail": "Copier l'adresse contact@cnetsure.com"
+  },
+  "cookieBanner": {
+    "text": "Nous utilisons des cookies techniques nécessaires au fonctionnement du site et à la mémorisation de vos préférences linguistiques. Aucun traceur publicitaire intrusif.",
+    "accept": "Accepter tout",
+    "refuse": "Refuser non essentiels",
+    "manage": "Préférences"
+  }
+}

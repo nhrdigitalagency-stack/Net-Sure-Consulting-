@@ -1,0 +1,214 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *, [data-theme="dark"], [data-theme="dark"] *));
+
+@layer base {
+  :root {
+    --font-display: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --accent-forest: #144A32;
+    --accent-forest-hover: #0E3624;
+    --bg-page: #FFFFFF;
+    --bg-card: #F9FAFB;
+    --border-line: #E5E7EB;
+  }
+
+  :root.dark, .dark, [data-theme="dark"] {
+    --accent-forest: #22C55E;
+    --accent-forest-hover: #16A34A;
+    --bg-page: #090A0B;
+    --bg-card: #121417;
+    --border-line: #20242C;
+  }
+
+  html {
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+    color: #111827;
+  }
+
+  html.dark, :root[data-theme="dark"] {
+    background-color: #090A0B;
+    color: #F9FAFB;
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: var(--bg-page);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+    line-height: 1.25;
+    padding-bottom: 0.15em;
+    overflow: visible !important;
+  }
+}
+
+/* Gold hover animations & luminous accents */
+.hover-gold {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-gold:hover {
+  border-color: rgba(212, 175, 55, 0.7) !important;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.22), 0 8px 20px -6px rgba(212, 175, 55, 0.15);
+  transform: translateY(-2px);
+}
+
+.section-hover-gold {
+  position: relative;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.section-hover-gold:hover {
+  border-color: rgba(212, 175, 55, 0.4) !important;
+}
+
+.section-hover-gold::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0) 50%, transparent 100%);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  z-index: 20;
+}
+
+.section-hover-gold:hover::before {
+  background: linear-gradient(90deg, transparent 5%, rgba(212, 175, 55, 0.85) 50%, transparent 95%);
+}
+
+/* Subtle Gold Button Shimmer */
+.btn-gold-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gold-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 215, 0, 0.35) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(25deg);
+  transition: all 0.6s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btn-gold-shimmer:hover::after {
+  left: 130%;
+  opacity: 1;
+}
+
+/* Gold pulsating beacon */
+@keyframes goldPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(212, 175, 55, 0);
+  }
+}
+
+.pulse-gold {
+  animation: goldPulse 2.5s infinite;
+}
+
+/* Gold gradient shine animation */
+@keyframes goldShine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #B45309 0%, #D4AF37 50%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .gold-gradient-text,
+[data-theme="dark"] .gold-gradient-text {
+  background: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Background overlays & architectural textures */
+.bg-grid-overlay {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+}
+
+.dark .bg-grid-overlay,
+[data-theme="dark"] .bg-grid-overlay {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+.bg-dot-matrix {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.09) 1.2px, transparent 1.2px);
+}
+
+.dark .bg-dot-matrix,
+[data-theme="dark"] .bg-dot-matrix {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.09) 1.2px, transparent 1.2px);
+}
+
+/* Ambient glow overlays */
+.bg-subtle-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(20, 74, 50, 0.08) 0%, transparent 70%);
+}
+
+.dark .bg-subtle-glow,
+[data-theme="dark"] .bg-subtle-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.12) 0%, transparent 70%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #9CA3AF50;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6B728090;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

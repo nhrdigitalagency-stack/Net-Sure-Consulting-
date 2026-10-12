@@ -1,0 +1,460 @@
+{
+  "nav": {
+    "brand": "NET SURE CONSULTING",
+    "home": "Home",
+    "presentation": "Overview",
+    "services": "Services",
+    "differenciators": "Difference",
+    "pricing": "Pricing",
+    "consulting": "Consulting",
+    "training": "Training",
+    "infra": "Infrastructure",
+    "about": "About",
+    "careers": "Careers",
+    "contact": "Contact",
+    "cta": "Free audit",
+    "themeLight": "Switch to light mode",
+    "themeDark": "Switch to dark mode",
+    "menuOpen": "Open navigation menu",
+    "menuClose": "Close menu"
+  },
+  "frames": {
+    "f01": "01 / Home",
+    "f02": "02 / Overview",
+    "f03": "03 / Services",
+    "f04": "04 / Difference",
+    "f05": "05 / Pricing",
+    "f06": "06 / Consulting",
+    "f07": "07 / Training",
+    "f08": "08 / Infrastructure",
+    "f09": "09 / About",
+    "f10": "10 / Careers",
+    "f11": "11 / Contact"
+  },
+  "hero": {
+    "kicker": "Search & Digital Engineering Agency — Paris & Île-de-France",
+    "title": "Invisible on Google Maps? We position you in the TOP 3 within 90 days.",
+    "subtitle": "We don't sell vanity SEO. We install a system that fills your calendar. For merchants, craftsmen, and professionals in Paris.",
+    "punchline": "We do not do vague rankings. We deploy a client acquisition engine. Zero jargon.",
+    "ctaEligibility": "Check my eligibility in 2 min",
+    "ctaAudit": "Request a free audit",
+    "statsLabel1": "Contractual goal",
+    "statsVal1": "Top 3 Maps",
+    "statsLabel2": "Average timeframe",
+    "statsVal2": "90 Days",
+    "statsLabel3": "Success Rate",
+    "statsVal3": "98%"
+  },
+  "presentation": {
+    "frameTitle": "Expertise & Vision",
+    "headline": "Your specialist in search visibility and custom web engineering.",
+    "body1": "We partner with SMBs, independent practices, and local businesses to turn digital visibility into verifiable, compound growth.",
+    "body2": "Our methodology unites software engineering discipline, targeted editorial strategy, and cutting-edge technical optimization. No gimmicks, no empty promises: measurable commercial acquisition.",
+    "pillars": {
+      "strategy": {
+        "title": "Strategy",
+        "desc": "Local competitor intelligence, high-intent query mapping, and architectural structuring of your Google profile."
+      },
+      "technique": {
+        "title": "Technical",
+        "desc": "Peak rendering performance, Schema.org rich markup, clean code, and strict NAP signal consistency."
+      },
+      "content": {
+        "title": "Content",
+        "desc": "Copywriting calibrated for local commercial intent, disciplined posting cadence, and verified customer review velocity."
+      }
+    }
+  },
+  "services": {
+    "frameTitle": "4 Core Practice Areas",
+    "headline": "An unbroken chain: from first user impression to core enterprise systems.",
+    "consulting": {
+      "num": "01",
+      "title": "Consulting",
+      "desc": "End-to-end guidance from scoping through delivery, user enablement, and structured change management."
+    },
+    "web": {
+      "num": "02",
+      "title": "Web Development",
+      "desc": "Showcase sites, corporate platforms, blogs, and tailored e-commerce. High speed, architectural minimalism, and native SEO."
+    },
+    "training": {
+      "num": "03",
+      "title": "Training",
+      "desc": "Official AGENIUS partnership. Accredited professional programs delivered nationwide across France."
+    },
+    "infra": {
+      "num": "04",
+      "title": "Infrastructure",
+      "desc": "Mainframe and Open systems engineering, managed services, hosting, and data centers with performance commitments."
+    }
+  },
+  "differenciators": {
+    "frameTitle": "What sets us apart",
+    "headline": "5 concrete commitments that redefine your standard.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Dual web and infrastructure engineering",
+        "desc": "Most build decorative facades. We build elegant interfaces engineered to sustain high concurrency and mission-critical uptime."
+      },
+      {
+        "num": "02",
+        "title": "Zero corporate jargon",
+        "desc": "Qualified local search traffic that turns into paying clients in your office or boutique. Every invested euro is tracked."
+      },
+      {
+        "num": "03",
+        "title": "Training included",
+        "desc": "Through our AGENIUS alliance, your team masters the tooling and gains complete operational autonomy over your content."
+      },
+      {
+        "num": "04",
+        "title": "Single point of contact",
+        "desc": "From initial requirement analysis to data center hosting, a dedicated senior project manager oversees your account."
+      },
+      {
+        "num": "05",
+        "title": "Results-driven accountability",
+        "desc": "Contractually measured deliverables and milestones, replacing the standard agency reliance on best-effort billing."
+      }
+    ]
+  },
+  "pricing": {
+    "frameTitle": "Pricing Matrix",
+    "headline": "Transparent, predictable packages. Zero hidden line items.",
+    "periodNotice": "Annual packages or fixed-deliverable engagements · Net prices (excl. VAT)",
+    "ctaSelect": "Select this package",
+    "ctaQuote": "Request a quotation",
+    "deposit": "50% deposit option:",
+    "cards": {
+      "visibilite": {
+        "badge": "Essential Tier",
+        "name": "Visibility Pack",
+        "price": "399 €",
+        "period": "excl. VAT / year (12 mos)",
+        "desc": "Strengthen digital prominence, outrank local competitors, and establish modern digital tooling with AI integration.",
+        "features": [
+          "Google Business Profile full overhaul",
+          "NAP directory information harmonization",
+          "Digital workflow setup with AI integration",
+          "Competitive local search positioning",
+          "50% deposit available (199.50 €)"
+        ]
+      },
+      "seoPremium": {
+        "badge": "Recommended Paris & IDF",
+        "name": "SEO Premium Pack",
+        "price": "649 €",
+        "period": "excl. VAT / year (12 mos)",
+        "desc": "The complete acceleration program to capture Google Maps Top 3 and dominate local search within 90 days.",
+        "features": [
+          "Full SEO audit (technical, Maps, local authority, reputation)",
+          "In-depth Google Maps tuning (categories, 4 updates, photos)",
+          "Website SEO: meta tags, internal mesh, speed, indexing",
+          "2 optimized key pages + 1 local authority article (600-800 words)",
+          "Review generation script (+10 verified reviews in 30 days goal)",
+          "Weekly performance reporting and tracking for 30 days",
+          "50% deposit available (324.50 €)"
+        ]
+      },
+      "visibilitePremium": {
+        "badge": "Comprehensive Scope",
+        "name": "Visibility Premium Pack",
+        "price": "4,200 €",
+        "period": "excl. VAT (4-5 months delivery)",
+        "desc": "Full-scale transformation for SMBs, consultants, and legal/health practices: bespoke site, directories, and social authority.",
+        "features": [
+          "In-depth digital presence audit (600 €)",
+          "Google profiles and industry directories overhaul (800 €)",
+          "3 to 5-page micro-site with domain & 1st-year hosting (1,200 €)",
+          "Content strategy: 4 SEO articles + 8 LinkedIn assets (700 €)",
+          "3 months dedicated monthly growth advisory (900 €)",
+          "50% at project start, 50% upon micro-site delivery"
+        ]
+      },
+      "designPro": {
+        "badge": "Brand Identity",
+        "name": "Design Pro Pack",
+        "price": "890 €",
+        "period": "excl. VAT (complete deliverable)",
+        "desc": "Bespoke brand visual identity and comprehensive UI mockups for mobile, tablet, and desktop environments.",
+        "features": [
+          "Tailored visual identity (palette, typography, design token guidelines)",
+          "Homepage design + up to 5 interior application pages",
+          "Full responsive breakpoints (mobile, tablet, desktop)",
+          "Comprehensive design system & UI component guide",
+          "Delivery of HD assets and source files (Figma or PDF)",
+          "2-installment payment option (445 €)"
+        ]
+      },
+      "siteVitrine": {
+        "badge": "Web Engineering",
+        "name": "Showcase Website",
+        "price": "499 €",
+        "period": "excl. VAT (turnkey delivery)",
+        "desc": "Bespoke digital presence tailored to your practice, highlighting services with seamless social integration.",
+        "features": [
+          "Custom design aligned with your brand identity",
+          "High-impact presentation of services and team",
+          "Unlimited editorial blog article system",
+          "Integrated social channels and inquiry forms",
+          "Native search engine indexation and speed optimization",
+          "50% deposit available (249.50 €)"
+        ]
+      },
+      "siteEcommerce": {
+        "badge": "Digital Commerce",
+        "name": "E-Commerce Platform",
+        "price": "1,499 €",
+        "period": "excl. VAT (turnkey delivery)",
+        "desc": "High-speed, resilient online commerce store featuring robust cataloging, shopping cart, and secure multi-rail checkout.",
+        "features": [
+          "Full product catalog with variants and inventory controls",
+          "Frictionless checkout pipeline with dynamic cart",
+          "Secure payments via card, Stripe, or direct bank transfer",
+          "Mobile-first responsive architecture",
+          "Instant search, catalog recommendations, and promotions",
+          "Order return and refund workflow management",
+          "2-installment payment option (749.50 €)"
+        ]
+      }
+    }
+  },
+  "consulting": {
+    "frameTitle": "Strategic Consulting",
+    "headline": "From opportunity analysis to organizational adoption.",
+    "intro": "Our senior practice consultants guide executive and operational leadership from initial requirement formulation through final delivery, ensuring total team engagement via tailored training.",
+    "sectorTitle": "Benchmark Practice Sector: Insurance & Underwriting",
+    "sectorDesc": "Deep domain expertise in regulatory compliance, business processes, and core insurance architectures:",
+    "sectors": [
+      { "name": "Life Insurance", "desc": "Capital accumulation, policy lifecycle administration, taxation, and compliance." },
+      { "name": "Health & Benefits", "desc": "Direct billing networks, electronic claims clearing, statutory and private schemes." },
+      { "name": "Property & Casualty", "desc": "Fire, liability, fleet, and commercial asset coverage." },
+      { "name": "Corporate Retirement", "desc": "Annuity calculations, benefit vesting, and statutory scheme mobility." }
+    ],
+    "deliverables": "Systematic deliverables: functional requirement blueprints, verification matrices, user guides, and train-the-trainer kits."
+  },
+  "training": {
+    "frameTitle": "AGENIUS Certified Training",
+    "headline": "Cultivating critical technical and management capabilities across France.",
+    "intro": "Through our alliance with AGENIUS, we deliver certified, hands-on training curriculums across the entire French territory.",
+    "categories": {
+      "it": {
+        "title": "Information Systems & Database",
+        "items": ["RDBMS (Oracle, DB2, PostgreSQL)", "Mainframe & Legacy Architecture", "System & Network Engineering", "IT Project Governance", "Software Engineering & Agile Frameworks"]
+      },
+      "business": {
+        "title": "Business Architecture Curriculums",
+        "items": ["Business Analysis (AMOA)", "Technical Delivery Architecture (AMOE)", "Mainframe COBOL Engineering", "Oracle PL/SQL", "Modern Web Engineering (Java, C#, .NET)"]
+      },
+      "users": {
+        "title": "End-User & Office Operations",
+        "items": ["Advanced Productivity & Spreadsheets", "Desktop Publishing & Graphic Arts", "Web Infrastructure & Messaging", "Corporate Finance, Accounting & Audit", "Management Control & CMMS (GMAO)"]
+      },
+      "hr": {
+        "title": "HR & Executive Leadership",
+        "items": ["Operational & Cross-Functional Management", "Personal Effectiveness & Leadership", "Corporate Communication", "Workplace Safety & Risk Management"]
+      }
+    }
+  },
+  "infrastructure": {
+    "frameTitle": "Infrastructure & Cloud",
+    "headline": "Mainframe & Open Systems. Contractual SLA guarantees.",
+    "intro": "Resilient infrastructure underpins every lasting digital transformation. We manage, fortify, and scale mission-critical corporate estates.",
+    "pillars": [
+      {
+        "title": "Managed Operations",
+        "desc": "Continuous operational maintenance (MCO) across core operating systems, middleware, DBMS, and network topologies. 24/7 incident mitigation and fixed-scope SLAs."
+      },
+      {
+        "title": "Advisory & Architecture",
+        "desc": "IT governance, production scheduling, enterprise system blueprinting, technical business analysis, and infrastructure steering."
+      },
+      {
+        "title": "Integration & Transformation",
+        "desc": "DevOps toolchain rollouts, ITSM automation, production line industrialization, and lead technical oversight on migration initiatives."
+      },
+      {
+        "title": "Specialized Competencies",
+        "desc": "Hardened networks, unified OS environments, enterprise middleware, high-availability relational databases, and 24/7 site operations."
+      }
+    ]
+  },
+  "about": {
+    "frameTitle": "About Net Sure Consulting",
+    "headline": "Founded in 2014, a 100% subsidiary of NET SURE Group.",
+    "story": "A French digital services company (ESN), Net Sure Consulting operates at the strategic convergence of advanced performance webmarketing, bespoke software delivery, and information system advisory.",
+    "forcesTitle": "Our Core Strengths",
+    "forces": [
+      {
+        "title": "National & International Scale",
+        "desc": "Unique bridge between data security and commercial webmarketing, backed by a proven network of specialist partners."
+      },
+      {
+        "title": "Bespoke Specialist Teams",
+        "desc": "Continuous protection and structured amplification of our clients' digital asset visibility."
+      },
+      {
+        "title": "Innovation & Foresight",
+        "desc": "Engineering modern solutions positioned ahead of search algorithmic updates and emerging cyber standards."
+      },
+      {
+        "title": "High-Value Acquisition Targeting",
+        "desc": "Rigorous focus on the most profitable, repeat customer segments in your local catchment."
+      },
+      {
+        "title": "Qualified Traffic & Conversions",
+        "desc": "Behavioral analytics and conversion pathway engineering that turn casual visitors into retained clients."
+      }
+    ],
+    "valuesTitle": "Core Institutional Values",
+    "values": ["Integrity", "Transparency", "Innovation", "Reliability", "Collaboration", "Accountability", "Continuous Learning", "Quality Commitment"],
+    "knowhowTitle": "Practical Field Expertise",
+    "knowhow": [
+      "Full Google Business Profile remediation (hours, imagery, verification, duplicate resolution, reviews)",
+      "Google local optimization and AI-enhanced ranking structure",
+      "Organic local SEO without corporate double-talk",
+      "High-speed showcase, institutional, and e-commerce web platform delivery"
+    ],
+    "partnersTitle": "Partners & Institutional Ecosystem",
+    "faqTitle": "Frequently Asked Questions (FAQ)",
+    "faqSubtitle": "Understanding our local search methodology, software engineering principles, and contractual SLA commitments.",
+    "faq": [
+      {
+        "id": "faq-1",
+        "question": "How does the contractual Google Maps Top 3 in 90 days guarantee work?",
+        "answer": "We initiate each engagement with an exhaustive technical audit of your Google Business listing and catchment area. We eliminate duplicates, secure your ownership, and synchronize your strict NAP (Name, Address, Phone) consistency across all primary directories. We optimize core and secondary categories, configure products and services, and deploy an automated, verified review collection cadence alongside targeted geo-posts. If Top 3 rankings are not secured within 90 days, our engineers continue optimization at no additional cost until the contracted result is delivered."
+      },
+      {
+        "id": "faq-2",
+        "question": "Why is client support and communication handled exclusively by written email within 24h?",
+        "answer": "As a disciplined Digital Services Company (ESN), written communication ensures 100% auditability, precise engineering tracking, and zero ambiguity regarding deliverables. Our contractual standard is unconditional: every message sent to contact@cnetsure.com receives a comprehensive technical reply within 24 business hours."
+      },
+      {
+        "id": "faq-3",
+        "question": "What is the dual Web and Infrastructure advantage of Net Sure Consulting?",
+        "answer": "Unlike traditional design boutiques that only focus on visual facades, Net Sure Consulting originated within the NET SURE Group with foundational expertise in enterprise mainframes, databases, and secure networks. Your web applications are architected for sub-second rendering speeds, high concurrency resilience, and rigorous cyber compliance."
+      },
+      {
+        "id": "faq-4",
+        "question": "Do you offer staged payments or deposit facilities for SMBs and independent practices?",
+        "answer": "Yes. To protect cash flow for local merchants, craftsmen, and regulated professions, the majority of our standard packages (Visibility Pack at 399 € excl. VAT, SEO Premium Pack at 649 € excl. VAT, Showcase and E-Commerce sites) feature a 50% initial deposit with the remaining balance due upon milestone verification. The Visibility Premium Pack (4,200 € excl. VAT) is also billed in 50/50 installments."
+      },
+      {
+        "id": "faq-5",
+        "question": "Do we retain complete ownership of our platforms and digital assets post-delivery?",
+        "answer": "Completely. You maintain full, perpetual ownership of all source code, domain names, Google Maps profiles, and client databases. Furthermore, through our certified partnership with AGENIUS, we train your personnel to operate and update your platforms with total independence."
+      }
+    ]
+  },
+  "careers": {
+    "frameTitle": "Career Opportunities",
+    "headline": "Join our consulting and engineering practice in Paris.",
+    "intro": "We seek meticulous professionals driven by technical excellence and intellectual honesty.",
+    "jobTitle": "SCT Business Analyst (SEPA Credit Transfer)",
+    "jobType": "Permanent (CDI) · Paris 18th / Hybrid",
+    "jobDept": "Banking Systems & Payment Rails Division",
+    "missionTitle": "Core Mission",
+    "mission": "Reinforce an enterprise payment modernization program. Draft detailed functional specifications based on business workshops and translate them into developer-ready technical requirements. Lead comprehensive quality assurance (test plan authoring, execution rigor, defect lifecycle management).",
+    "skillsTitle": "Candidate Profile & Required Competencies",
+    "skills": [
+      "In-depth command of SEPA Credit Transfer (SCT) rails and payment protocols",
+      "Demonstrated autonomy, precise formal writing, and proactive initiative",
+      "Strong executive presence, synthesis capability, and workshop facilitation",
+      "Technical environment: COBOL / Mainframe, system log analysis, SQL query drafting",
+      "Project toolchain: Postman, SQL, Octane, JIRA",
+      "Agile delivery experience and technical English proficiency"
+    ],
+    "ctaApply": "Apply for this position"
+  },
+  "contact": {
+    "frameTitle": "Contact & Quotation",
+    "headline": "Let's discuss your initiative.",
+    "intro": "Guaranteed response within 24 business hours. To maintain complete written traceability and rigorous engineering auditability, all correspondence is conducted by email.",
+    "addressTitle": "Headquarters",
+    "addressVal": "40 rue Damrémont, 75018 Paris",
+    "emailTitle": "Direct Communication",
+    "emailVal": "contact@cnetsure.com",
+    "slaTitle": "Service Level Commitment",
+    "slaVal": "Written reply within 24 business hours",
+    "form": {
+      "nameLabel": "Full name *",
+      "namePlaceholder": "e.g. Jean-Luc Dupont",
+      "emailLabel": "Professional email address *",
+      "emailPlaceholder": "jeanluc@company.com",
+      "companyLabel": "Company name *",
+      "companyPlaceholder": "Cabinet Dupont & Partners",
+      "numberLabel": "Phone number or SIRET *",
+      "numberPlaceholder": "+33 6 12 34 56 78 or 944 590 371",
+      "offerLabel": "Requested package or capability *",
+      "offerSelectPlaceholder": "Select a package",
+      "messageLabel": "Project description or scope *",
+      "messagePlaceholder": "Describe your initiative, local visibility goals, or technical requirements...",
+      "checkboxDevisLabel": "I wish to receive a formal quote for the Visibility Premium Pack (4,200 € excl. VAT)",
+      "submitBtn": "Send message",
+      "submitting": "Transmitting...",
+      "successTitle": "Message transmitted successfully",
+      "successDesc": "Your inquiry has been recorded. Our engineering team is evaluating your brief and will reply within 24 business hours to",
+      "errorRequired": "This required field cannot be blank.",
+      "errorEmail": "Please enter a valid email address."
+    },
+    "footer": {
+      "legalNotice": "© 2026 NET SURE CONSULTING. All rights reserved.",
+      "designBy": "Design by X.Art Digital",
+      "cgu": "Terms of Service (CGU)",
+      "cookies": "Cookie Policy (EU)",
+      "confidentiality": "Data Protection (GDPR)"
+    }
+  },
+  "eligibility": {
+    "title": "Google Maps Eligibility Assessment",
+    "subtitle": "Benchmark your local acquisition potential in 3 quick questions.",
+    "step1Title": "01. Business Sector",
+    "step1Desc": "Select your commercial or professional classification:",
+    "step2Title": "02. Core Catchment Area",
+    "step2Desc": "Where is your practice or customer base located?",
+    "step3Title": "03. Current Google Business Status",
+    "step3Desc": "What is your present local search footprint?",
+    "businessTypes": {
+      "liberal": "Regulated profession (legal, medical, accounting)",
+      "craft": "Local craftsmanship & trade construction",
+      "retail": "Retail boutique, showroom, hospitality",
+      "service": "B2B / B2C services SMB",
+      "other": "Other independent enterprise"
+    },
+    "mapStatus": {
+      "none": "No Google profile or invisible in local searches",
+      "bad": "Existing profile relegated outside the Top 10",
+      "unverified": "Unclaimed profile, duplicate, or unaddressed reviews"
+    },
+    "resultTitle": "Your Eligibility Diagnostic",
+    "scoreLabel": "Acceleration Potential",
+    "scoreVal": "Very High (Top 3 attainable)",
+    "recommendation": "Your sector generates heavy, consistent local search volume across Paris and Île-de-France. A 90-day disciplined overhaul of your Google Maps listing and NAP citations will capture ready-to-buy local inquiries.",
+    "ctaTransfer": "Transfer diagnostic to my free audit inquiry",
+    "prev": "Previous",
+    "next": "Next",
+    "close": "Close"
+  },
+  "supportWidget": {
+    "trigger": "Client Support",
+    "title": "Net Sure Support",
+    "subtitle": "Reply within 24 business hours · contact@cnetsure.com",
+    "welcome": "Hello. How may our engineering and consulting team assist you today?",
+    "chip1": "Request a free audit",
+    "chip2": "Get a formal quotation",
+    "chip3": "Ask a technical question",
+    "inputPlaceholder": "Type your message...",
+    "emailPlaceholder": "Your email address...",
+    "send": "Send",
+    "success": "Message prepared! An email draft has been generated for contact@cnetsure.com.",
+    "copyEmail": "Copy contact@cnetsure.com"
+  },
+  "cookieBanner": {
+    "text": "We employ minimal technical cookies strictly necessary for site operation and your language preference. Zero intrusive advertising trackers.",
+    "accept": "Accept all",
+    "refuse": "Decline non-essential",
+    "manage": "Preferences"
+  }
+}
